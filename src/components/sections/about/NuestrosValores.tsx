@@ -32,7 +32,7 @@ const NuestrosValores = () => {
             <div key={valor.id} className="flex flex-col items-center hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay={`${valor.id * 100}`}>
               {valor.icono}
               <h3 className="text-xl font-semibold text-blue-950 mb-3">{valor.titulo}</h3>
-              <p className="text-blue-900 max-w-xs">{valor.descripcion}</p>
+              <p className="text-blue-950 max-w-md">{valor.descripcion}</p>
             </div>
           ))}
         </div>
