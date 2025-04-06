@@ -5,29 +5,36 @@ import Image from 'next/image';
 import useEmblaCarousel from 'embla-carousel-react';
 import { Button } from '@/components/ui/Button';
 import CategoriaProductos from '@/components/sections/productos/CategoriaProductos';
+import Link from 'next/link';
 
 // Datos para las diapositivas del carrusel
 const slides = [
   {
     id: 1,
     image: '/img/epp.jpg',
+    imagen2: '/img/maquina.png',
     title: 'Equipos y Suministros Industriales',
     description: 'Soluciones integrales para su empresa',
-    buttonText: 'Cotizar Ahora'
+    buttonText: 'Cotizar Ahora',
+    buttonUrl: '/productos'
   },
   {
     id: 2,
     image: '/img/hero-2.jpg',
+    imagen2: '/img/maquina.png',
     title: 'Seguridad y Calidad Garantizada',
     description: 'Trabajamos con las mejores marcas del mercado',
-    buttonText: 'Ver Productos'
+    buttonText: 'Ver Productos',
+    buttonUrl: '/productos'
   },
   {
     id: 3,
     image: '/img/hero-3.jpg',
+    imagen2: '/img/maquina.png',
     title: 'Atención Personalizada',
     description: 'Expertos a su servicio en todo momento',
-    buttonText: 'Contáctanos'
+    buttonText: 'Contáctanos',
+    buttonUrl: '/contacto'
   }
 ];
 
@@ -84,18 +91,42 @@ const Hero = () => {
                   style={{ objectFit: 'cover' }}
                   priority
                 />
-                <div className="absolute inset-0 bg-primary/40 flex flex-col items-center justify-center">
-                  {/* Contenido del slide */}
-                  <div className="text-center max-w-4xl px-4 animate-fade-in mb-24">
-                    <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">{slide.title}</h1>
-                    <p className="text-xl text-white mb-8">{slide.description}</p>
-                    <Button 
-                      variant="secondary" 
-                      size="lg" 
-                      className="px-8 py-3 text-lg"
-                    >
-                      {slide.buttonText}
-                    </Button>
+                <div className="absolute inset-0 bg-primary/20 flex items-start md:items-center justify-center pt-32 md:pt-0">
+                  {/* Contenido principal - posicionado más arriba */}
+                  <div className="container mx-auto px-6">
+                    <div className="flex flex-col md:flex-row items-center max-w-6xl mx-auto relative md:-mt-32">
+                      
+                      {/* Panel izquierdo: contenido de texto */}
+                      <div className="md:w-1/2 md:pr-8 pb-6 md:pb-0 z-10">
+                        <div className="bg-white/60 p-8 md:p-10 rounded-2xl shadow-md">
+                          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-blue-500">{slide.title}</h1>
+                          <p className="text-lg md:text-xl mb-6 text-ocre">{slide.description}</p>
+                          <Link href={slide.buttonUrl} passHref>
+                            <Button 
+                              variant="outline"
+                              className="px-6 py-2 text-black rounded-full border-2 border-azul-claro "
+                            >
+                              {slide.buttonText}
+                            </Button>
+                          </Link>
+                        </div>
+                      </div>
+                      
+                      {/* Panel derecho: imagen */}
+                      <div className="md:w-1/2 md:-ml-16 z-20">
+                        {slide.imagen2 && (
+                          <div className="flex justify-center">
+                            <Image 
+                              src={slide.imagen2} 
+                              alt={`${slide.title} - imagen`} 
+                              width={480} 
+                              height={400} 
+                              className="rounded-lg object-contain max-w-full"
+                            />
+                          </div>
+                        )}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -120,7 +151,7 @@ const Hero = () => {
         {/* Categorías integradas directamente en el carrusel */}
         <div className="absolute bottom-0 left-0 right-0 z-10 w-full">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="bg-transparent backdrop-blur-sm rounded-t-xl p-8 animate-slide-in shadow-lg">
+            <div className="bg-transparent backdrop-blur-sm rounded-t-xl p-8 animate-slide-in">
               <CategoriaProductos />
             </div>
           </div>

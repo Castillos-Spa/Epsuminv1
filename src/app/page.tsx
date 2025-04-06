@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
@@ -14,11 +15,14 @@ import NuestrosObjetivos from "@/components/sections/about/NuestrosObjetivos";
 import NuestrosValores from "@/components/sections/about/NuestrosValores";
 import Contacto from "@/components/sections/home/Contacto";
 
+
 export default function Home() {
   return (
     <main>
       <Navbar /> {/* Barra de Navegacion*/}
+
       <Hero/> {/* Seccion principal con fondo con imagen carrusel */}
+
       <ProductosDestacados/> {/* seccion de productos destacados  */}
       <Catalogo/> {/* seccion de catalogo de productos y servicios */}
       <ServicioInfo/> {/* Seccion de necesita nuestros servicios */}
