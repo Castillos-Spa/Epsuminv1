@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@tailwind components;
+@tailwind utilities;
+
+@import "../styles/theme.css";
+@import "../styles/animations.css";
 
 :root {
   --background: #ffffff;
@@ -18,9 +23,21 @@
     --foreground: #ededed;
   }
 }
-
+@layer components {
+  .bg-naranjita {
+    background-color: #EB9947;
+  }}
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+/* Estilos para aplicar animaciones a componentes */
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-on-scroll.animated {
+  opacity: 1;
 }
