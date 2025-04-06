@@ -20,9 +20,7 @@ export default function Home() {
   return (
     <main>
       <Navbar /> {/* Barra de Navegacion*/}
-
       <Hero/> {/* Seccion principal con fondo con imagen carrusel */}
-
       <ProductosDestacados/> {/* seccion de productos destacados  */}
       <Catalogo/> {/* seccion de catalogo de productos y servicios */}
       <ServicioInfo/> {/* Seccion de necesita nuestros servicios */}
