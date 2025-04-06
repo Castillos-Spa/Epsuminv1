@@ -2,8 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "../styles/theme.css";
 @import "../styles/animations.css";
+
+@theme {
+  /* Colores */
+    --color-azul-claro: oklch(0.66 0.08 196);
+    --color-azul-oscuro: oklch(28.2% 0.91 267.935);
+    --color-naranja: oklch(75% 0.183 55.934);
+    --color-blanco: oklch(0.96 0.01 39); /* Ajustado para reflejar mejor el blanco */
+    --color-ocre: oklch(0.45 0.24 26);
+    --color-negro: oklch(0.01 0.01 276); /* Ajustado para reflejar mejor el negro */
+  
+  
+  
+  /* Tipografía */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  
+  /* Espaciado - Sistema de diseño */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  
+  /* Bordes */
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 1rem;
+  
+  /* Sombras */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  
+  /* Transiciones */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+}
 
 :root {
   --background: #ffffff;
