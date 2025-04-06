@@ -1,55 +1,40 @@
-import React from 'react';
+"use client";
+import React, {useEffect} from 'react';
 import Image from 'next/image';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { FaUsers, FaLeaf, FaShieldAlt, FaStar } from 'react-icons/fa';
 
 const valores = [
-  { id: 1, titulo: 'Integridad', descripcion: 'Actuamos con honestidad y transparencia en todas nuestras operaciones.' },
-  { id: 2, titulo: 'Compromiso', descripcion: 'Nos dedicamos plenamente a satisfacer las necesidades de nuestros clientes.' },
-  { id: 3, titulo: 'Calidad', descripcion: 'Ofrecemos productos y servicios que cumplen con los más altos estándares.' },
-  { id: 4, titulo: 'Responsabilidad', descripcion: 'Asumimos la responsabilidad de nuestras acciones y decisiones.' },
-  { id: 5, titulo: 'Trabajo en Equipo', descripcion: 'Colaboramos efectivamente para lograr objetivos comunes.' },
-  { id: 6, titulo: 'Innovación', descripcion: 'Buscamos constantemente nuevas formas de mejorar y crecer.' },
+  { id: 1, titulo: 'Diversidad', descripcion: 'Creamos un entorno laboral justo y respetuoso, garantizando igual acceso a oportunidades y recursos para todos.', icono: <FaUsers className="text-3xl text-gray-900 mb-4" />},
+  { id: 2, titulo: 'Sostenibilidad', descripcion: 'Nos comprometemos con la responsabilidad social y el desarrollo sostenible, minimizando nuestro impacto en el medioambiente y las comunidades.', icono: <FaLeaf className="text-3xl text-gray-900 mb-4" />},
+  { id: 3, titulo: 'Seguridad', descripcion: 'Priorizamos la salud y seguridad de nuestros colaboradores en todas nuestras decisiones y acciones, identificando y controlando riesgos e impactos.', icono: <FaShieldAlt className="text-3xl text-gray-900 mb-4" />},
+  { id: 4, titulo: 'Calidad', descripcion: 'Mejoramos continuamente nuestros servicios, optimizando procesos con tecnología avanzada y un equipo altamente capacitado para atender de forma confiable a nuestros clientes.', icono: <FaStar className="text-3xl text-gray-900 mb-4" />},
 ];
 
 const NuestrosValores = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Nuestros Valores</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Los valores que guían nuestras acciones y decisiones diarias, formando la base 
-            de nuestra cultura empresarial y relación con nuestros clientes.
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section className="py-16 bg-white text-center relative overflow-hidden">
+      {/* Imagen de fondo con overlay */}
+      
+      <div className="absolute inset-0">
+        <div className="w-full h-full bg-center bg-cover bg-fixed opacity-60 clip-bottom-curve" style={{ backgroundImage: `url('/img/fondo-valores.png')` }}></div>
+      </div>
+      {/* Overlay y contenido */}
+      <div className="relative z-10 max-w-5xl mx-auto px-6">
+        <h2 className="text-2xl font-bold text-blue-950 uppercase mb-12">Nuestros Valores</h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {valores.map((valor) => (
-            <div key={valor.id} className="p-6 border border-gray-200 rounded-lg hover:border-blue-300 hover:shadow-md transition-all">
-              <h3 className="text-xl font-bold mb-3 text-blue-600">{valor.titulo}</h3>
-              <p className="text-gray-600">{valor.descripcion}</p>
+            <div key={valor.id} className="flex flex-col items-center hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay={`${valor.id * 100}`}>
+              {valor.icono}
+              <h3 className="text-xl font-semibold text-blue-950 mb-3">{valor.titulo}</h3>
+              <p className="text-blue-950 max-w-sw">{valor.descripcion}</p>
             </div>
           ))}
-        </div>
-        
-        <div className="mt-16 relative rounded-xl overflow-hidden">
-          <div className="relative h-[300px] w-full">
-            <Image 
-              src="/valores-banner.jpg" 
-              alt="Nuestros Valores" 
-              fill 
-              style={{ objectFit: 'cover' }}
-            />
-            <div className="absolute inset-0 bg-blue-600 bg-opacity-80 flex flex-col items-center justify-center text-white p-6">
-              <h3 className="text-2xl font-bold mb-4 text-center">Comprometidos con la Excelencia</h3>
-              <p className="text-center max-w-3xl mb-6">
-                Nuestros valores nos impulsan a buscar la excelencia en todo lo que hacemos, 
-                proporcionando soluciones de calidad que generan confianza y satisfacción.
-              </p>
-              <button className="bg-white text-blue-600 px-6 py-2 rounded font-medium hover:bg-blue-50 transition-colors">
-                Nuestra Historia
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </section>

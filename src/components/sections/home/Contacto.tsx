@@ -6,7 +6,7 @@ const Contacto = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="flex flex-col md:flex-row">
-            <div className="md:w-1/2 bg-blue-600 text-white p-8">
+            <div className="md:w-1/2 bg-blue-950 text-white p-8">
               <h2 className="text-3xl font-bold mb-6">Contáctenos</h2>
               <p className="mb-8">
                 Estamos listos para atender sus consultas y proporcionarle una cotización 
@@ -23,7 +23,7 @@ const Contacto = () => {
                     </svg>
                     <div>
                       <p className="font-medium">Dirección</p>
-                      <p>Av. Principal 1234, El Valle</p>
+                      <p>Ruta 41, km 29, La Calera, Valle de Elqui</p>
                     </div>
                   </div>
                   
@@ -33,7 +33,7 @@ const Contacto = () => {
                     </svg>
                     <div>
                       <p className="font-medium">Teléfono</p>
-                      <p>+56 9 1234 5678</p>
+                      <p>+56 9 6146 3898</p>
                     </div>
                   </div>
                   
@@ -57,61 +57,60 @@ const Contacto = () => {
             </div>
             
             <div className="md:w-1/2 p-8">
-              <h3 className="text-2xl font-bold mb-6">Solicite una Cotización</h3>
+              <h3 className="text-2xl font-bold text-blue-950 mb-6">Solicite una Cotización</h3>
               <form>
                 <div className="mb-4">
-                  <label htmlFor="nombre" className="block text-gray-700 mb-2">Nombre</label>
+                  <label htmlFor="nombre" className="block text-blue-950 mb-2">Nombre</label>
                   <input 
                     type="text" 
                     id="nombre" 
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+                    className="w-full px-4 py-2 border border-gray-300 text-blue-950 rounded focus:outline-none focus:border-blue-500"
                     placeholder="Su nombre"
                   />
                 </div>
                 
                 <div className="mb-4">
-                  <label htmlFor="empresa" className="block text-gray-700 mb-2">Empresa</label>
+                  <label htmlFor="empresa" className="block text-blue-950 mb-2">Empresa</label>
                   <input 
                     type="text" 
                     id="empresa" 
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+                    className="w-full px-4 py-2 border border-gray-300 text-blue-950 rounded focus:outline-none focus:border-blue-500"
                     placeholder="Nombre de su empresa"
                   />
                 </div>
                 
                 <div className="mb-4">
-                  <label htmlFor="email" className="block text-gray-700 mb-2">Email</label>
+                  <label htmlFor="email" className="block text-blue-950 mb-2">Email</label>
                   <input 
                     type="email" 
                     id="email" 
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
-                    placeholder="Su email"
+                    className="w-full px-4 py-2 border border-gray-300 text-blue-950 rounded focus:outline-none focus:border-blue-500"
+                    placeholder="Su email de contacto"
                   />
                 </div>
                 
                 <div className="mb-4">
-                  <label htmlFor="telefono" className="block text-gray-700 mb-2">Teléfono</label>
+                  <label htmlFor="telefono" className="block text-blue-950 mb-2">Teléfono</label>
                   <input 
                     type="tel" 
                     id="telefono" 
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
-                    placeholder="Su teléfono"
+                    className="w-full px-4 py-2 border border-gray-300 text-blue-950 rounded focus:outline-none focus:border-blue-500"
+                    placeholder="9 XXXXXXXX"
                   />
                 </div>
                 
                 <div className="mb-6">
-                  <label htmlFor="mensaje" className="block text-gray-700 mb-2">Mensaje</label>
-                  <textarea 
-                    id="mensaje" 
-                    rows={4} 
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+                  <label htmlFor="mensaje" className="block text-blue-950 mb-2">Mensaje</label>
+                  <textarea
+                    id="mensaje"
+                    rows={1}
+                    className="w-full px-4 py-2 border border-gray-300 text-blue-950 rounded focus:outline-none focus:border-blue-500"
                     placeholder="Describa su requerimiento"
                   ></textarea>
                 </div>
-                
                 <button 
                   type="submit" 
-                  className="w-full bg-blue-600 text-white py-3 rounded font-medium hover:bg-blue-700 transition-colors"
+                  className="w-full bg-amber-600 text-white py-3 rounded font-medium hover:bg-blue-700 transition-colors"
                 >
                   Enviar Solicitud
                 </button>
