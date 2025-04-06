@@ -3,7 +3,6 @@
 import React from 'react';
 import ProductCard from '@/components/common/ProductCard';
 import ProductCard2 from '@/components/common/ProductCard2';
-import { Button } from '@/components/ui/Button';
 
 const productos = [
   { id: 1, nombre: 'Casco de Seguridad', precio: 25000, imagen: '/img/casco.png', isNew: true },
@@ -21,8 +20,8 @@ const ProductosDestacados = () => {
   return (
     <section className="py-16 fade-in bg-stone-100">
       <div className=" mx-10 px-5 border-4 rounded-lg bg-white">
-        <h2 className="text-3xl text-start font-bold text-center text-black mb-12 my-4">Destacados de la Semana</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-4">
+        <h2 className="text-3xl text-start ml-6 font-bold text-center text-black mb-12 my-4">Destacados de la Semana</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-4 mb-5">
           {/* Los dos primeros productos usan ProductCard */}
           {productos.slice(0, 2).map((producto) => (
             <div key={producto.id} className="slide-up text-black " style={{ animationDelay: `${producto.id * 100}ms` }}>
@@ -50,11 +49,11 @@ const ProductosDestacados = () => {
             </div>
           ))}
         </div>
-        <div className="text-center text-black mt-12">
+        {/* <div className="text-center text-black mt-12">
           <Button variant="outline" size="lg">
             Ver Todos los Productos
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

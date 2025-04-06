@@ -14,16 +14,17 @@ import AcercaDeNosotros from "@/components/sections/about/AcercaDeNosotros";
 import NuestrosObjetivos from "@/components/sections/about/NuestrosObjetivos";
 import NuestrosValores from "@/components/sections/about/NuestrosValores";
 import Contacto from "@/components/sections/home/Contacto";
+import CatalogoDescarga from "@/components/sections/home/CatalogoDescarga";
 
 
 export default function Home() {
   return (
-    <main>
+    <main className="min-h-screen">
       <Navbar /> {/* Barra de Navegacion*/}
 
       <Hero/> {/* Seccion principal con fondo con imagen carrusel */}
-
       <ProductosDestacados/> {/* seccion de productos destacados  */}
+      <CatalogoDescarga/> {/* seccion de catalogo de productos y servicios */}
       <Catalogo/> {/* seccion de catalogo de productos y servicios */}
       <ServicioInfo/> {/* Seccion de necesita nuestros servicios */}
       <Maquinaria/> {/* Seccion de maquinaria proximamente */}

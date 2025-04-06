@@ -70,7 +70,7 @@ const Hero = () => {
 
   // Función para navegar a un slide específico
   const scrollTo = useCallback(
-    (index) => {
+    (index: number) => {
       if (emblaApi) emblaApi.scrollTo(index);
     },
     [emblaApi]

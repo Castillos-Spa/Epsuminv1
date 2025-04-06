@@ -9,7 +9,7 @@ const Maquinaria = () => {
           <div className="inline-block bg-yellow-100 px-4 py-1 rounded-full text-yellow-800 font-medium text-sm mb-4">
             PRÓXIMAMENTE
           </div>
-          <h2 className="text-3xl font-bold mb-6">Maquinaria Industrial</h2>
+          <h2 className="text-3xl font-bold mb-6 text-black">Maquinaria Industrial</h2>
           <p className="text-gray-600 text-lg mb-8">
             Estamos ampliando nuestra oferta con una nueva sección de maquinaria industrial. 
             Pronto podrá encontrar una amplia variedad de equipos para su empresa.
@@ -17,7 +17,7 @@ const Maquinaria = () => {
           
           <div className="relative h-80 rounded-lg overflow-hidden mb-8">
             <Image 
-              src="/maquinaria-preview.jpg" 
+              src="/img/Komatsu.jpg" 
               alt="Maquinaria Industrial" 
               fill 
               style={{ objectFit: 'cover' }}
