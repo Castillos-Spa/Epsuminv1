@@ -12,7 +12,7 @@ const slides = [
   {
     id: 1,
     image: '/img/epp.jpg',
-    imagen2: '/img/maquina.png',
+    imagen2: '/img/torreta.png',
     title: 'Equipos y Suministros Industriales',
     description: 'Soluciones integrales para su empresa',
     buttonText: 'Cotizar Ahora',
@@ -20,8 +20,8 @@ const slides = [
   },
   {
     id: 2,
-    image: '/img/hero-2.jpg',
-    imagen2: '/img/maquina.png',
+    image: '/img/Fondo_carrousel.png',
+    imagen2: '/img/torreta.png',
     title: 'Seguridad y Calidad Garantizada',
     description: 'Trabajamos con las mejores marcas del mercado',
     buttonText: 'Ver Productos',

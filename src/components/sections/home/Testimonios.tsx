@@ -8,7 +8,7 @@ const testimonios = [
     empresa: 'Constructora San José',
     comentario: 'Excelente servicio y productos de alta calidad. Han sido nuestros proveedores durante 5 años y siempre cumplen con los plazos de entrega.',
     estrellas: 5,
-    avatar: '/testimonios/avatar1.jpg'
+    avatar: '/img/avatar.png'
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const testimonios = [
     empresa: 'Industrias del Valle',
     comentario: 'Los servicios de mantenimiento que ofrecen son excepcionales. El personal técnico es muy profesional y conocedor.',
     estrellas: 5,
-    avatar: '/testimonios/avatar2.jpg'
+    avatar: '/img/avatar.png'
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const testimonios = [
     empresa: 'Minera Los Andes',
     comentario: 'Todos los equipos de seguridad que hemos adquirido son de primera categoría. Recomiendo ampliamente sus servicios.',
     estrellas: 4,
-    avatar: '/testimonios/avatar3.jpg'
+    avatar: '/img/avatar.png'
   },
 ];
 
@@ -33,8 +33,8 @@ const Testimonios = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Lo Que Dicen Nuestros Clientes</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold mb-4 text-black">Lo Que Dicen Nuestros Clientes</h2>
+          <p className="text-gray-600 ">
             La satisfacción de nuestros clientes es nuestra principal prioridad. 
             Estos son algunos comentarios de quienes han confiado en nuestros productos y servicios.
           </p>
@@ -53,7 +53,7 @@ const Testimonios = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg">{testimonio.nombre}</h3>
+                  <h3 className="font-bold text-lg text-black">{testimonio.nombre}</h3>
                   <p className="text-gray-600 text-sm">{testimonio.empresa}</p>
                 </div>
               </div>
