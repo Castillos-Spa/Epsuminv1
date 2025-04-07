@@ -9,14 +9,14 @@ export default function CatalogoProductos() {
 
       <div className="container relative mx-auto px-4">
         <div className="flex flex-col items-center md:flex-row md:items-center md:justify-between">
-          {/* Columna de imágenes - Mejorada para imagen más grande */}
-          <div className="relative mb-8 w-full max-w-2xl md:mb-0 md:w-3/5">
+          {/* Columna de imágenes - Aumentada para imagen más grande */}
+          <div className="relative mb-8 w-full md:mb-0 md:w-3/5 lg:w-2/3">
             {/* Contenedor de imagen más grande */}
             <div className="relative">
               <Image
-                src="/img/komatsu.jpg"
-                width={600}
-                height={800}
+                src="/img/tablet.png"
+                width={300}
+                height={600}
                 alt="Catálogo de productos en tablet"
                 className="h-auto w-full object-contain drop-shadow-2xl"
                 priority
@@ -25,7 +25,7 @@ export default function CatalogoProductos() {
           </div>
 
           {/* Columna de texto - Ajustada para balancear con imagen */}
-          <div className="w-full md:w-2/5 md:pl-8">
+          <div className="w-full md:w-2/5 lg:w-1/3 md:pl-8">
             <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">Catalogo de Productos</h2>
 
             <p className="mb-8 text-xl font-medium text-red-600 md:text-2xl">

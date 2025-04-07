@@ -78,9 +78,9 @@ export default function ElementosProteccion() {
       {/* Sección superior - Trabajador con lista de equipos */}
       <div className="relative w-full bg-gray-300 bg-[url('/placeholder.svg?height=400&width=1200')] bg-cover bg-center py-8">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col items-center md:flex-row md:justify-between">
+          <div className="relative flex flex-col md:flex-row md:justify-between">
             {/* Fondo naranja con lista de equipos */}
-            <div className="mb-8 w-full rounded-lg bg-orange-400 p-6 md:mb-0 md:w-3/5">
+            <div className="mb-8 w-full rounded-lg bg-orange-400 p-6 md:mb-0 md:w-3/5 md:ml-auto md:mr-4 z-0">
               <div className="grid grid-cols-2 gap-x-8 gap-y-2 text-sm">
                 <div className="flex items-center">
                   <span className="mr-2">•</span>
@@ -126,20 +126,19 @@ export default function ElementosProteccion() {
               </div>
             </div>
 
-            {/* Imagen del trabajador */}
-            <div className="w-full md:w-2/5 md:pl-8">
-              <Image
-                src="/img/casco.png"
-                width={300}
-                height={400}
-                alt="Trabajador con equipo de seguridad"
-                className="ml-auto h-auto"
-              />
-            </div>
+            {/* Imagen del trabajador - Reposicionada más a la derecha */}
+            <div className="w-full md:w-1/5 md:absolute md:right-8 md:top-1/2 md:transform md:-translate-y-2/3 md:z-10">
+            <Image
+              src="/img/vista-lateral-ingeniero-hombre-sonriente-casco.png"
+              width={250}
+              height={350}
+              alt="Trabajador con equipo de seguridad"
+              className="h-auto drop-shadow-xl"
+            />
+          </div>
           </div>
         </div>
       </div>
-
       {/* Sección de Elementos de Protección Personal */}
       <div className="container mx-auto px-4 py-8">
         <div className="rounded-lg bg-white p-6 shadow-md">
@@ -175,7 +174,7 @@ export default function ElementosProteccion() {
             {/* Imagen de carpa */}
             <div className="mb-4 w-full md:mb-0 md:w-1/4">
               <Image
-                src="/placeholder.svg?height=200&width=200"
+                src="/img/Toldo-gris.png"
                 width={200}
                 height={200}
                 alt="Carpa"
