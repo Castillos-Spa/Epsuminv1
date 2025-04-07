@@ -22,7 +22,7 @@ const AcercaDeNosotros = () => {
             />
           </div>
         </div>
-        <div className="w-full md:w-1/2 text-center md:text-left flex flex-col items-center md:items-start gap-4 " data-aos="fade-left" data-aos-duration="1000" data-aos-offset="200">
+        <div className="w-full md:w-1/2 text-center md:text-left flex flex-col items-center md:items-start gap-4 " data-aos="fade-left" data-aos-duration="100" data-aos-offset="200">
           <h2 className="text-3xl font-bold text-blue-950 mb-4">¿Quiénes somos?</h2>
           <div className="bg-blue-950 text-white p-6 rounded-lg">
             <p className="text-lg">

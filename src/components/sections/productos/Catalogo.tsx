@@ -9,33 +9,33 @@ export default function ElementosProteccion() {
   const elementosProteccion = [
     {
       id: 1,
-      nombre: "Chaleco de Seguridad",
-      imagen: "/img/komatsu.jpg",
+      nombre: "Geologo Minero",
+      imagen: "/img/geologo-minero.png",
     },
     {
       id: 2,
       nombre: "Botas de Trabajo",
-      imagen: "/placeholder.svg?height=200&width=200",
+      imagen: "/img/botas.png",
     },
     {
       id: 3,
       nombre: "Zapatos de Seguridad",
-      imagen: "/placeholder.svg?height=200&width=200",
+      imagen: "/img/botin.png",
     },
     {
       id: 4,
       nombre: "Pantalón de Trabajo",
-      imagen: "/placeholder.svg?height=200&width=200",
+      imagen: "/img/Pantalon.png",
     },
     {
       id: 5,
       nombre: "Casco de Seguridad",
-      imagen: "/placeholder.svg?height=200&width=200",
+      imagen: "/img/casco.png",
     },
     {
       id: 6,
       nombre: "Guantes de Trabajo",
-      imagen: "/placeholder.svg?height=200&width=200",
+      imagen: "/img/guantes.png",
     },
   ]
 
