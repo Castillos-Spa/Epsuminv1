@@ -62,7 +62,7 @@ const Noticias = () => {
                 <p className="text-gray-500 text-sm mb-2">{noticia.fecha}</p>
                 <h3 className="font-bold text-lg mb-2 text-amber-600">{noticia.titulo}</h3>
                 <p className="text-gray-600 mb-4">{noticia.extracto}</p>
-                <Link href={`/noticias/${noticia.id}`} className="text-blue-950 hover:text-blue-700 inline-flex items-center">
+                <Link href={`/noticias/${noticia.id}`} className="text-blue-950 hover:text-amber-600 inline-flex items-center">
                   <span>Leer más</span>
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
