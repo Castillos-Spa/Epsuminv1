@@ -7,24 +7,24 @@ const noticias = [
     id: 1,
     titulo: 'Nuevas inversiones mineras en el Valle',
     extracto: 'Se anuncian importantes inversiones en el sector minero que impulsarán el desarrollo económico de la región.',
-    fecha: '15 Jun 2023',
-    imagen: '/noticias/mineria.jpg',
+    fecha: '15 Jun 2025',
+    imagen: '/img/carpas-para-la-mineria.jpg',
     categoria: 'Minería'
   },
   {
     id: 2,
     titulo: 'Avances en proyectos de construcción',
     extracto: 'Los proyectos de infraestructura muestran un avance significativo generando empleo en la zona.',
-    fecha: '28 May 2023',
-    imagen: '/noticias/construccion.jpg',
+    fecha: '28 May 2025',
+    imagen: '/img/carpas-para-la-mineria.jpg',
     categoria: 'Construcción'
   },
   {
     id: 3,
     titulo: 'Nuevas normas de seguridad industrial',
     extracto: 'Se implementan nuevas normativas de seguridad que las empresas deberán cumplir a partir del próximo mes.',
-    fecha: '10 Apr 2023',
-    imagen: '/noticias/seguridad.jpg',
+    fecha: '10 Abr 2025',
+    imagen: '/img/carpas-para-la-mineria.jpg',
     categoria: 'Normativa'
   },
 ];
@@ -34,8 +34,8 @@ const Noticias = () => {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center mb-10">
-          <h2 className="text-3xl font-bold">Noticias del Valle</h2>
-          <Link href="/noticias" className="text-blue-600 hover:text-blue-700 inline-flex items-center">
+          <h2 className="text-3xl font-bold text-blue-950">Noticias del Valle</h2>
+          <Link href="/noticias" className="text-blue-950 hover:text-blue-700 inline-flex items-center">
             <span>Ver todas</span>
             <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -48,7 +48,7 @@ const Noticias = () => {
             <article key={noticia.id} className="bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition-shadow">
               <div className="relative h-48">
                 <Image 
-                  src={noticia.imagen} 
+                  src={noticia.imagen}
                   alt={noticia.titulo} 
                   fill 
                   style={{ objectFit: 'cover' }}
@@ -60,9 +60,9 @@ const Noticias = () => {
               
               <div className="p-5">
                 <p className="text-gray-500 text-sm mb-2">{noticia.fecha}</p>
-                <h3 className="font-bold text-lg mb-2">{noticia.titulo}</h3>
+                <h3 className="font-bold text-lg mb-2 text-amber-600">{noticia.titulo}</h3>
                 <p className="text-gray-600 mb-4">{noticia.extracto}</p>
-                <Link href={`/noticias/${noticia.id}`} className="text-blue-600 hover:text-blue-700 inline-flex items-center">
+                <Link href={`/noticias/${noticia.id}`} className="text-blue-950 hover:text-amber-600 inline-flex items-center">
                   <span>Leer más</span>
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -71,12 +71,6 @@ const Noticias = () => {
               </div>
             </article>
           ))}
-        </div>
-        
-        <div className="text-center mt-10">
-          <button className="bg-white text-blue-600 border border-blue-600 px-6 py-2 rounded font-medium hover:bg-blue-50 transition-colors">
-            Suscribirse al Boletín
-          </button>
         </div>
       </div>
     </section>

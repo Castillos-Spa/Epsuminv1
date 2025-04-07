@@ -57,7 +57,7 @@ const Contacto = () => {
             </div>
             
             <div className="md:w-1/2 p-8">
-              <h3 className="text-2xl font-bold text-blue-950 mb-6">Solicite una Cotización</h3>
+              <h3 className="text-2xl font-bold text-amber-600 mb-6">Solicite una Cotización</h3>
               <form>
                 <div className="mb-4">
                   <label htmlFor="nombre" className="block text-blue-950 mb-2">Nombre</label>
@@ -110,7 +110,7 @@ const Contacto = () => {
                 </div>
                 <button 
                   type="submit" 
-                  className="w-full bg-amber-600 text-white py-3 rounded font-medium hover:bg-blue-700 transition-colors"
+                  className="w-full bg-amber-600 text-white py-3 rounded font-medium hover:bg-blue-950 transition-colors"
                 >
                   Enviar Solicitud
                 </button>

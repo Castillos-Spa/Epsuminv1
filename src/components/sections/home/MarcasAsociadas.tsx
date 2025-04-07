@@ -12,9 +12,9 @@ const marcas = [
 
 const MarcasAsociadas = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white text-center relative overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        {/* <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Marcas Asociadas</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Trabajamos con las marcas líderes en la industria para garantizar productos 
@@ -33,24 +33,33 @@ const MarcasAsociadas = () => {
               />
             </div>
           ))}
+        </div> */}
+        <div className="absolute inset-0">
+          <div className="w-full h-full bg-center bg-cover bg-fixed" style={{ backgroundImage: `url('/img/fondo-licitaciones.png')` }}></div>
         </div>
-        
-        <div className="bg-gray-50 p-8 rounded-lg max-w-4xl mx-auto">
-          <div className="flex items-center mb-6">
-            <div className="bg-yellow-100 p-3 rounded-md mr-4">
-              <svg className="w-6 h-6 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clipRule="evenodd" />
-              </svg>
+        <div className="mb-20 text-center">
+          <h2 className="text-6xl font-bold text-blue-950 mb-2 uppercase">Licitaciones</h2>
+          <h3 className="text-4xl font-semibold text-amber-600 mb-2 tracking-wider">PRÓXIMAMENTE</h3>
+
+          <div className="flex justify-center">
+            <div className="animate-spin-slow">
+              <Image 
+                src="/img/loading1.png"
+                alt="Licitaciones Icono"
+                width={120}
+                height={120}
+              />
             </div>
-            <h3 className="text-2xl font-bold">Licitaciones - Próximamente</h3>
           </div>
-          <p className="text-gray-600 mb-6">
-            Estamos trabajando para implementar una sección de licitaciones donde podrá 
-            encontrar oportunidades para su empresa y participar en los procesos de compra.
+          <div className="flex justify-center text-gray-800">
+            <p className="w-full md:w-1/2 flex flex-col gap-2 text-xl">
+              Estamos construyendo un espacio para conectar.<br />
+              Pronto, este será un punto de encuentro en El Valle para nuevas oportunidades y colaboraciones.
+            </p>
+          </div>
+          <p className="text-xl font-bold text-blue-950 mt-6">
+            ¡Vuelve pronto para descubrirlo!
           </p>
-          <button className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors">
-            Recibir Notificaciones
-          </button>
         </div>
       </div>
     </section>

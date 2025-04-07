@@ -97,7 +97,7 @@ const Footer = () => {
                 <input 
                   type="email" 
                   placeholder="Tu email" 
-                  className="px-4 py-2 w-full text-gray-900 focus:outline-none rounded-l"
+                  className="w-full px-4 py-2 border border-gray-300 text-white rounded focus:outline-none focus:border-blue-500"
                 />
                 <button 
                   type="submit"

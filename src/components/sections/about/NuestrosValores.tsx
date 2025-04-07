@@ -18,6 +18,7 @@ const NuestrosValores = () => {
   }, []);
   return (
     <section className="py-16 bg-white text-center relative overflow-hidden">
+      <h2 className="text-2xl font-bold text-blue-950 uppercase mb-12">Nuestros Valores</h2>
       {/* Imagen de fondo con overlay */}
       
       <div className="absolute inset-0">
@@ -25,7 +26,7 @@ const NuestrosValores = () => {
       </div>
       {/* Overlay y contenido */}
       <div className="relative z-10 max-w-5xl mx-auto px-6">
-        <h2 className="text-2xl font-bold text-blue-950 uppercase mb-12">Nuestros Valores</h2>
+        
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {valores.map((valor) => (
