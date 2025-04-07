@@ -26,10 +26,6 @@ const Maquinaria = () => {
               <span className="text-white text-2xl font-bold">Maquinaria Industrial</span>
             </div>
           </div>
-          
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors">
-            Recibir Notificación de Lanzamiento
-          </button>
         </div>
       </div>
     </section>

@@ -44,32 +44,32 @@ export default function ElementosProteccion() {
     {
       id: 1,
       nombre: "Carpa Azul",
-      imagen: "/placeholder.svg?height=200&width=200",
+      imagen: "/img/torreta.png",
     },
     {
       id: 2,
       nombre: "Carpa Blanca",
-      imagen: "/placeholder.svg?height=200&width=200",
+      imagen: "/img/generador.png",
     },
     {
       id: 3,
       nombre: "Carpa Azul Grande",
-      imagen: "/placeholder.svg?height=200&width=200",
+      imagen: "/img/generador2.png",
     },
     {
       id: 4,
       nombre: "Carpa Negra",
-      imagen: "/placeholder.svg?height=200&width=200",
+      imagen: "/img/placa.png",
     },
     {
       id: 5,
       nombre: "Toldo Extensible",
-      imagen: "/placeholder.svg?height=200&width=200",
+      imagen: "/img/rodillo.png",
     },
     {
       id: 6,
       nombre: "Carpa Hexagonal",
-      imagen: "/placeholder.svg?height=200&width=200",
+      imagen: "/img/generador3.png",
     },
   ]
 
