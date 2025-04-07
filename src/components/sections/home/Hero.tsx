@@ -12,7 +12,7 @@ const slides = [
   {
     id: 1,
     image: '/img/epp.jpg',
-    imagen2: '/img/torreta.png',
+    // imagen2: '/img/torreta.png',
     title: 'Equipos y Suministros Industriales',
     description: 'Soluciones integrales para su empresa',
     buttonText: 'Cotizar Ahora',
@@ -150,9 +150,11 @@ const Hero = () => {
         
         {/* Categorías integradas directamente en el carrusel */}
         <div className="absolute bottom-0 left-0 right-0 z-10 w-full">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="w-full">
             <div className="bg-transparent backdrop-blur-sm rounded-t-xl p-8 animate-slide-in">
-              <CategoriaProductos />
+              <div className="mx-auto max-w-7xl">
+                <CategoriaProductos />
+              </div>
             </div>
           </div>
         </div>
