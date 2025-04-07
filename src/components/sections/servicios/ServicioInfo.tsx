@@ -22,9 +22,9 @@ export default function SeccionContacto() {
             </div>
 
             {/* Columna derecha - Imagen */}
-            <div className="relative z-10 mt-4 md:mt-0">
+            <div className="relative z-15 mt-4 md:mt-0">
               <Image
-                src="/img/tablet.png"
+                src="/img/asistente.png"
                 alt="Persona con laptop"
                 width={500}
                 height={500}
