@@ -1,3 +1,4 @@
+'use client'
 
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -14,6 +15,9 @@ import NuestrosObjetivos from "@/components/sections/about/NuestrosObjetivos";
 import NuestrosValores from "@/components/sections/about/NuestrosValores";
 import Contacto from "@/components/sections/home/Contacto";
 import CatalogoDescarga from "@/components/sections/home/CatalogoDescarga";
+// import WhatsAppButton from "@/components/wsp/WhatsAppButton";
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
+
 
 
 export default function Home() {
@@ -21,6 +25,14 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar /> {/* Barra de Navegacion*/}
       <Hero/> {/* Seccion principal con fondo con imagen carrusel */}
+      {/* <WhatsAppButton phoneNumber="56957337491"/> Boton de WhatsApp */}
+      <FloatingWhatsApp
+        phoneNumber="56957337491"
+        accountName="EPSUMIN"
+        allowClickAway={false}
+        notification={true}
+        chatMessage="Hola, ¿en qué puedo ayudarte?"
+      />
       <ProductosDestacados/> {/* seccion de productos destacados  */}
       <CatalogoDescarga/> {/* seccion de catalogo de productos y servicios */}
       <Catalogo/> {/* seccion de catalogo de productos y servicios */}
