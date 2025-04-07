@@ -12,7 +12,7 @@ const marcas = [
 
 const MarcasAsociadas = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white text-center relative overflow-hidden">
       <div className="container mx-auto px-4">
         {/* <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Marcas Asociadas</h2>
@@ -34,12 +34,14 @@ const MarcasAsociadas = () => {
             </div>
           ))}
         </div> */}
-        
-        <div className="mb-20">
-          <h2 className="text-4xl font-bold text-gray-800 mb-6 uppercase">Licitaciones</h2>
-          <h3 className="text-2xl font-semibold text-red-600 mb-6 tracking-wider">PRÓXIMAMENTE</h3>
+        <div className="absolute inset-0">
+          <div className="w-full h-full bg-center bg-cover bg-fixed" style={{ backgroundImage: `url('/img/fondo-licitaciones.png')` }}></div>
+        </div>
+        <div className="mb-20 text-center">
+          <h2 className="text-6xl font-bold text-blue-950 mb-2 uppercase">Licitaciones</h2>
+          <h3 className="text-4xl font-semibold text-amber-600 mb-2 tracking-wider">PRÓXIMAMENTE</h3>
 
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center">
             <div className="animate-spin-slow">
               <Image 
                 src="/img/loading1.png"
@@ -49,11 +51,13 @@ const MarcasAsociadas = () => {
               />
             </div>
           </div>
-          <p className="text-lg max-w-2xl mx-auto text-gray-800 font-semibold leading-relaxed mb-4">
-            Estamos construyendo un espacio para conectar.<br />
-            Pronto, este será un punto de encuentro en <strong>El Valle</strong> para nuevas oportunidades y colaboraciones.
-          </p>
-          <p className="text-xl font-bold text-blue-800 mt-6">
+          <div className="flex justify-center text-gray-800">
+            <p className="w-full md:w-1/2 flex flex-col gap-2 text-xl">
+              Estamos construyendo un espacio para conectar.<br />
+              Pronto, este será un punto de encuentro en El Valle para nuevas oportunidades y colaboraciones.
+            </p>
+          </div>
+          <p className="text-xl font-bold text-blue-950 mt-6">
             ¡Vuelve pronto para descubrirlo!
           </p>
         </div>
