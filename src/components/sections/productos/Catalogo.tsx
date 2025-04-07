@@ -80,7 +80,7 @@ export default function ElementosProteccion() {
         <div className="container mx-auto px-4">
           <div className="relative flex flex-col md:flex-row md:justify-between">
             {/* Fondo naranja con lista de equipos */}
-            <div className="mb-8 w-full rounded-lg bg-orange-400 p-6 md:mb-0 md:w-3/5 md:ml-auto md:mr-4 z-0">
+            <div className="mb-8 w-full rounded-lg bg-amber-650 p-6 md:mb-0 md:w-3/5 md:ml-auto md:mr-4 z-0">
               <div className="grid grid-cols-2 gap-x-8 gap-y-2 text-sm">
                 <div className="flex items-center">
                   <span className="mr-2">•</span>
