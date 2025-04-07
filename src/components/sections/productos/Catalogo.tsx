@@ -126,16 +126,16 @@ export default function ElementosProteccion() {
               </div>
             </div>
 
-            {/* Imagen del trabajador - Reposicionada más a la derecha */}
-            <div className="w-full md:w-1/5 md:absolute md:right-8 md:top-1/2 md:transform md:-translate-y-2/3 md:z-10">
-            <Image
-              src="/img/vista-lateral-ingeniero-hombre-sonriente-casco.png"
-              width={250}
-              height={350}
-              alt="Trabajador con equipo de seguridad"
-              className="h-auto drop-shadow-xl"
-            />
-          </div>
+            {/* Imagen del trabajador - Visible solo en tablet/desktop */}
+            <div className="hidden md:block md:w-1/5 md:absolute md:right-8 md:top-1/2 md:transform md:-translate-y-2/3 md:z-10">
+              <Image
+                src="/img/vista-lateral-ingeniero-hombre-sonriente-casco.png"
+                width={250}
+                height={350}
+                alt="Trabajador con equipo de seguridad"
+                className="h-auto drop-shadow-xl"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -153,7 +153,7 @@ export default function ElementosProteccion() {
               <div key={elemento.id} className="p-2">
                 <div className="overflow-hidden rounded-lg border border-gray-200 bg-white p-2">
                   <Image
-                    src={elemento.imagen || "/placeholder.svg"}
+                    src={elemento.imagen || "/img/casco.png"}
                     width={200}
                     height={200}
                     alt={elemento.nombre}
