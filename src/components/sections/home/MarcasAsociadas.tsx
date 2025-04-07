@@ -35,22 +35,29 @@ const MarcasAsociadas = () => {
           ))}
         </div>
         
-        <div className="bg-gray-50 p-8 rounded-lg max-w-4xl mx-auto">
-          <div className="flex items-center mb-6">
-            <div className="bg-yellow-100 p-3 rounded-md mr-4">
-              <svg className="w-6 h-6 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clipRule="evenodd" />
-              </svg>
+        <div className="mb-20">
+          <h2 className="text-4xl font-bold text-gray-800 mb-6 uppercase">Licitaciones</h2>
+          <h3 className="text-2xl font-semibold text-red-600 mb-6 tracking-wider">PRÓXIMAMENTE</h3>
+
+          <div className="flex justify-center mb-8">
+            <div className="animate-spin-slow">
+              <Image 
+                src="/icons/engranaje-central.png" // Cambia esta ruta si tienes el ícono en otra carpeta
+                alt="Licitaciones Icono"
+                width={120}
+                height={120}
+              />
             </div>
-            <h3 className="text-2xl font-bold">Licitaciones - Próximamente</h3>
           </div>
-          <p className="text-gray-600 mb-6">
-            Estamos trabajando para implementar una sección de licitaciones donde podrá 
-            encontrar oportunidades para su empresa y participar en los procesos de compra.
+
+          <p className="text-lg max-w-2xl mx-auto text-gray-800 font-semibold leading-relaxed mb-4">
+            Estamos construyendo un espacio para conectar.<br />
+            Pronto, este será un punto de encuentro en <strong>El Valle</strong> para nuevas oportunidades y colaboraciones.
           </p>
-          <button className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors">
-            Recibir Notificaciones
-          </button>
+
+          <p className="text-xl font-bold text-blue-800 mt-6">
+            ¡Vuelve pronto para descubrirlo!
+          </p>
         </div>
       </div>
     </section>

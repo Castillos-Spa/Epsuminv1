@@ -59,7 +59,7 @@ const NuestrosObjetivos = () => {
             </p>
           </div>
         </div>
-        <div className="bg-blue-950 text-white rounded-lg p-10 grid md:grid-cols-2 transition duration-700 ease-in-out transform hover:scale-105"  data-aos="fade-left" data-aos-duration="1000" data-aos-offset="200">
+        <div className="bg-blue-950 text-white rounded-lg p-10 grid md:grid-cols-2 transition duration-700 ease-in-out transform hover:scale-105" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="200">
           <div>
             <h3 className="text-2xl font-bold mb-2">Visión</h3>
             <p>
