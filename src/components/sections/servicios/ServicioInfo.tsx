@@ -3,7 +3,7 @@ import { Mail, Phone } from "lucide-react"
 import Image from "next/image"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { use, useEffect } from "react"
+import { useEffect } from "react"
 
 export default function SeccionContacto() {
   useEffect(() => {
