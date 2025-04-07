@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo (izquierda) */}
           <div className="w-1/4">
-            <Link href="/" className="text-2xl font-bold text-blue-700">EPSUMIN</Link>
+            <Link href="/" className="text-2xl font-bold text-blue-950">EPSUMIN</Link>
           </div>
           
           {/* Navegación (centro) */}

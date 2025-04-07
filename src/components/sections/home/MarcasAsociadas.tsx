@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { use } from 'react';
 import Image from 'next/image';
 
 const marcas = [
@@ -46,8 +47,8 @@ const MarcasAsociadas = () => {
               <Image 
                 src="/img/loading1.png"
                 alt="Licitaciones Icono"
-                width={120}
-                height={120}
+                width={220}
+                height={220}
               />
             </div>
           </div>
@@ -57,7 +58,7 @@ const MarcasAsociadas = () => {
               Pronto, este será un punto de encuentro en El Valle para nuevas oportunidades y colaboraciones.
             </p>
           </div>
-          <p className="text-xl font-bold text-blue-950 mt-6">
+          <p className="text-2xl font-bold text-blue-950 mt-6">
             ¡Vuelve pronto para descubrirlo!
           </p>
         </div>
