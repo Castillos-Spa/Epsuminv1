@@ -14,7 +14,7 @@ const MarcasAsociadas = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        {/* <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Marcas Asociadas</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Trabajamos con las marcas líderes en la industria para garantizar productos 
@@ -33,7 +33,7 @@ const MarcasAsociadas = () => {
               />
             </div>
           ))}
-        </div>
+        </div> */}
         
         <div className="mb-20">
           <h2 className="text-4xl font-bold text-gray-800 mb-6 uppercase">Licitaciones</h2>
@@ -42,19 +42,17 @@ const MarcasAsociadas = () => {
           <div className="flex justify-center mb-8">
             <div className="animate-spin-slow">
               <Image 
-                src="/icons/engranaje-central.png" // Cambia esta ruta si tienes el ícono en otra carpeta
+                src="/img/loading1.png"
                 alt="Licitaciones Icono"
                 width={120}
                 height={120}
               />
             </div>
           </div>
-
           <p className="text-lg max-w-2xl mx-auto text-gray-800 font-semibold leading-relaxed mb-4">
             Estamos construyendo un espacio para conectar.<br />
             Pronto, este será un punto de encuentro en <strong>El Valle</strong> para nuevas oportunidades y colaboraciones.
           </p>
-
           <p className="text-xl font-bold text-blue-800 mt-6">
             ¡Vuelve pronto para descubrirlo!
           </p>
