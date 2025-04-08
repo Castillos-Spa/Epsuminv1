@@ -4,9 +4,9 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/home/Hero";
 import ProductosDestacados from "@/components/sections/home/ProductosDestacados";
-import Catalogo from "@/components/sections/productos/Catalogo";
+import Catalogo from "@/components/sections/productos/Catalogo2";
 import ServicioInfo from "@/components/sections/servicios/ServicioInfo";
-import Maquinaria from "@/components/sections/home/Maquinaria";
+// import Maquinaria from "@/components/sections/home/Maquinaria";
 import Testimonios from "@/components/sections/home/Testimonios";
 import Noticias from "@/components/sections/home/Noticias";
 import MarcasAsociadas from "@/components/sections/home/MarcasAsociadas";
@@ -32,12 +32,13 @@ export default function Home() {
         allowClickAway={false}
         notification={true}
         chatMessage="Hola, ¿en qué puedo ayudarte?"
+        avatar="/img/avatar.png"
       />
       <ProductosDestacados/> {/* seccion de productos destacados  */}
       <CatalogoDescarga/> {/* seccion de catalogo de productos y servicios */}
       <Catalogo/> {/* seccion de catalogo de productos y servicios */}
       <ServicioInfo/> {/* Seccion de necesita nuestros servicios */}
-      <Maquinaria/> {/* Seccion de maquinaria proximamente */}
+      {/* <Maquinaria/> Seccion de maquinaria proximamente */}
       <Testimonios/> {/* seccion de google comentarios */}
       <Noticias/> {/* seccion de noticias del valle */}
       <MarcasAsociadas/> {/* Licitaciones proximamente */}

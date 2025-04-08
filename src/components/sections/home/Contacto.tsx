@@ -57,7 +57,7 @@ const Contacto = () => {
             </div>
             
             <div className="md:w-1/2 p-8">
-              <h3 className="text-2xl font-bold text-amber-600 mb-6">Solicite una Cotización</h3>
+              <h3 className="text-2xl font-bold text-amber-600 mb-6">Solicite Cotización</h3>
               <form>
                 <div className="mb-4">
                   <label htmlFor="nombre" className="block text-blue-950 mb-2">Nombre</label>
