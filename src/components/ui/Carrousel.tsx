@@ -11,16 +11,21 @@ interface SimpleCarouselProps {
     tablet: number
     desktop: number
   }
+  autoPlay?: boolean
+  interval?: number
 }
 
 export function SimpleCarousel({
   children,
   className = "",
-  itemsToShow = { mobile: 1, tablet: 2, desktop: 4 }
+  itemsToShow = { mobile: 1, tablet: 2, desktop: 4 },
+  autoPlay = true,
+  interval = 5000
 }: SimpleCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [itemWidth, setItemWidth] = useState(0)
   const [visibleItems, setVisibleItems] = useState(itemsToShow.mobile)
+  const [isPaused, setIsPaused] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
 
   const totalItems = React.Children.count(children)
@@ -58,6 +63,21 @@ export function SimpleCarousel({
     }
   }, [currentIndex, maxIndex])
 
+  // Autoplay functionality
+  useEffect(() => {
+    if (autoPlay && !isPaused) {
+      const timer = setInterval(() => {
+        if (currentIndex < maxIndex) {
+          setCurrentIndex(prev => prev + 1);
+        } else {
+          setCurrentIndex(0); // Loop back to the beginning
+        }
+      }, interval);
+      
+      return () => clearInterval(timer);
+    }
+  }, [autoPlay, currentIndex, maxIndex, interval, isPaused]);
+
   const scrollPrev = () => {
     setCurrentIndex((prev) => Math.max(0, prev - 1))
   }
@@ -67,7 +87,11 @@ export function SimpleCarousel({
   }
 
   return (
-    <div className={`relative ${className}`}>
+    <div 
+      className={`relative ${className}`}
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
       <div
         ref={containerRef}
         className="overflow-hidden"

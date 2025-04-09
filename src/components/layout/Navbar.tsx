@@ -22,12 +22,12 @@ const Navbar = () => {
               <Link href="#contacto" className="text-black hover:text-primary transition-colors">Contacto</Link>
             </div>
           {/* Redes sociales (derecha) */}
-          <div className="w-1/4 flex justify-end space-x-4">
+          <div className="w-1/4 flex justify-end space-x-4 0">
             <a 
               href="https://www.instagram.com/epsumin" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-black hover:text-[#E1306C] transition-colors"
+              className="text-orange-400 hover:text-[#E1306C] transition-colors"
               aria-label="Instagram"
             >
               <FaInstagram size={22} />
@@ -36,7 +36,7 @@ const Navbar = () => {
               href="https://wa.me/56912345678" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-black hover:text-[#25D366] transition-colors"
+              className="text-orange-400 hover:text-[#25D366] transition-colors"
               aria-label="WhatsApp"
             >
               <FaWhatsapp size={22} />
@@ -45,7 +45,7 @@ const Navbar = () => {
               href="https://www.facebook.com/epsumin" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-black hover:text-[#1877F2] transition-colors"
+              className="text-orange-400 hover:text-[#1877F2] transition-colors"
               aria-label="Facebook"
             >
               <FaFacebook size={22} />
