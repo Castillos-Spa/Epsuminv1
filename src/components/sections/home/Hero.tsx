@@ -93,7 +93,7 @@ const Hero = () => {
                 />
                 <div className="absolute inset-0 bg-primary/20 flex items-start md:items-center justify-center pt-32 md:pt-0">
                   {/* Contenido principal - posicionado más arriba */}
-                  <div className="container mx-auto px-6">
+                  <div className="container mx-auto md:px-12 lg:px-24 xl:px-32 2xl:px-48">
                     <div className="flex flex-col md:flex-row items-center max-w-6xl mx-auto relative md:-mt-32">
                       
                       {/* Panel izquierdo: contenido de texto */}
@@ -113,7 +113,7 @@ const Hero = () => {
                       </div>
                       
                       {/* Panel derecho: imagen */}
-                      <div className="md:w-1/2 md:-ml-16 z-20">
+                      <div className="md:w-1/2 md:-ml-16 lg:w-1/2 lg:-ml-4 z-20">
                         {slide.imagen2 && (
                           <div className="flex justify-center">
                             <Image 
@@ -152,7 +152,7 @@ const Hero = () => {
         <div className="absolute bottom-0 left-0 right-0 z-10 w-full">
           <div className="w-full">
             <div className="bg-transparent backdrop-blur-sm rounded-t-xl p-8 animate-slide-in">
-              <div className="mx-auto max-w-7xl">
+              <div className="mx-auto max-w-7xl md:px-12 lg:px-24 xl:px-32 2xl:px-48">
                 <CategoriaProductos />
               </div>
             </div>

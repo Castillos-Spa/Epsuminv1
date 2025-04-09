@@ -12,7 +12,7 @@ const categorias = [
 
 const CategoriaProductos = () => {
   return (
-    <div className='w-full px-2 sm:px-4 md:px-6 lg:px-8' align-items-center >
+    <div className='w-full px-2 sm:px-5 md:px-6 lg:px-8 xl:px-10 2xl:px-12' align-items-center >
       <div className="bg-naranja py-2 sm:py-3 md:py-4 mb-4 sm:mb-6 rounded-full  w-2xs mx-auto max-w-[200px] sm:max-w-[300px] mx-auto  ">
         <h2 className=" font-bold text-center text-white px-2">CONOCÉ NUESTRAS CATEGORÍAS</h2>
       </div>
