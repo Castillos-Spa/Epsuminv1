@@ -81,7 +81,7 @@ body {
 }
 
 .clip-bottom-curve {
-  clip-path: ellipse(200px 600px at 50% 100%);
+  clip-path: ellipse(100px 600px at 50% 100%);
 }
 
 .animate-spin-slow {
