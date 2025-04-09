@@ -30,7 +30,7 @@ const NuestrosValores = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {valores.map((valor) => (
-            <div key={valor.id} className="flex flex-col items-center hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay={`${valor.id * 100}`}>
+            <div key={valor.id} className="flex flex-col items-center hover:scale-105 transition-transform duration-300">
               {valor.icono}
               <h3 className="text-xl font-semibold text-blue-950 mb-3">{valor.titulo}</h3>
               <p className="text-blue-950 max-w-sw">{valor.descripcion}</p>
