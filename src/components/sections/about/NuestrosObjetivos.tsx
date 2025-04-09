@@ -22,19 +22,19 @@ const NuestrosObjetivos = () => {
               height={100}
               className="bg-white border-2 border-amber-600 rounded-md shadow-md"
             />
-            <p className="font-bold md:text-lg max-w-xl px-4 text-center md:text-left">
+            <p className="font-bold md:text-lg text-center md:text-left">
               Desarrollar un trabajo seguro para las personas, con alto sentido para nuestros clientes y respetuoso con el medioambiente.
             </p>
           </div>
           <div className="flex flex-col md:flex-row-reverse items-center gap-6">
             <Image
-              src="/gala.svg"
+              src="/gala.svg" 
               alt="icono"
               width={100}
               height={100}
               className="bg-white border-2 border-amber-600 rounded-md shadow-md"
             />
-            <p className="font-bold md:text-lg max-w-xl px-4 text-center md:text-left">
+            <p className="font-bold md:text-lg px-4 text-center md:text-left">
               Convertirnos en un proveedor estratégico en el sector minero, suministrando insumos para instalaciones de faena, equipos y maquinarias de manera eficiente.
             </p>
           </div>
@@ -46,7 +46,7 @@ const NuestrosObjetivos = () => {
               height={100}
               className="bg-white border-2 border-amber-600 rounded-md shadow-md"
             />
-            <p className="font-bold md:text-lg max-w-xl px-4 text-center md:text-left">
+            <p className="font-bold md:text-lg text-center md:text-left">
               Maximizar los recursos en nuestros servicios junto a nuestros colaboradores, representando ser una empresa de aporte a la sociedad del Valle de Elqui.
             </p>
           </div>
