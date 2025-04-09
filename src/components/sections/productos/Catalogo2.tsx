@@ -176,7 +176,7 @@ export default function ElementosProteccion() {
           <div className="relative mt-0 mb-6 bg-white rounded-xl shadow-md overflow-hidden z-10">
             {/* Título de elementos de protección */}
             <div className="relative text-right pt-6 px-6">
-              <h2 className="text-xl font-bold text-gray-800 md:text-xl   ">
+              <h2 className="text-right text-xl font-bold text-gray-800 md:text-5xl   ">
                 Insumos para <span className="text-blue-800">Elementos de Protección</span>
               </h2>
             </div>
@@ -206,9 +206,9 @@ export default function ElementosProteccion() {
       <div className="bg-gray-100 py-8">
         <div className="container mx-auto px-4">
           {/* Sección de carpa y contacto */}
-          <div className="mb-8 flex flex-col items-center md:flex-row md:justify-between">
+          <div className="mb-0 flex flex-col items-center md:flex-row md:justify-between">
             {/* Imagen de carpa */}
-            <div className="mb-4 w-full md:mb-0 md:w-1/4">
+            <div className="md:block md:w-1/5 md:absolute md:left-0 md:top-21/6 md:transform md:-translate-y-3 md:z-10">
               <Image
                 src="/img/Toldo-gris.png"
                 width={200}
@@ -219,9 +219,9 @@ export default function ElementosProteccion() {
             </div>
 
             {/* Recuadro naranja con información */}
-            <div className="w-full rounded-lg bg-orange-400 p-6 md:w-3/4">
+            <div className="w-full rounded-lg bg-orange-400 p-6 md:w-3/5 md:mr-auto md:ml-20 ">
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <div className="text-sm">
+                <div className="text-sm  md:ml-60">
                   <div className="mb-1 flex items-center">
                     <span className="mr-2">•</span>
                     <span>Estructuras (metálicas y acrílicas)</span>
@@ -252,7 +252,7 @@ export default function ElementosProteccion() {
                   </div>
                 </div>
 
-                <div className="text-sm">
+                <div className="text-sm md:ml-30">
                   <div className="mb-1 flex items-center">
                     <span className="mr-2">•</span>
                     <span>Visítanos para conocer:</span>
@@ -288,10 +288,10 @@ export default function ElementosProteccion() {
                 </div>
               </div>
 
-              <div className="mt-4 flex justify-center">
+              <div className="mt-4 flex jsutify-end ">
                 <Link
                   href="#contactar"
-                  className="rounded-full bg-white px-8 py-2 font-medium text-gray-800 transition-colors hover:bg-gray-100"
+                  className="rounded-full bg-white px-8 py-2 font-medium text-gray-800 transition-colors hover:bg-gray-100 border-2 border-azul-cyan-300"
                 >
                   CONTACTAR
                 </Link>
@@ -300,17 +300,19 @@ export default function ElementosProteccion() {
           </div>
 
           {/* Título de Insumos para Instalaciones */}
-          <div className="mb-6 text-right">
+          <div className=" relative mt-0 mb-6 bg-white rounded-xl shadow-md overflow-hidden z-10 ">
+            <div className="relative text-right pt-6 px-6">
             <h2 className="text-xl font-bold text-gray-800 md:text-2xl">
               Insumos para <span className="text-blue-800">Instalaciones de Faena</span>
             </h2>
           </div>
 
           {/* Galería de imágenes de carpas */}
-          <SimpleCarousel itemsToShow={{ mobile: 1, tablet: 2, desktop: 4 }} className="px-4">
+          <div className="px-4 py-6">
+          <SimpleCarousel itemsToShow={{ mobile: 1, tablet: 2, desktop: 4 }} className="p-16 z-10">
             {insumosFaena.map((insumo) => (
               <div key={insumo.id} className="p-2">
-                <div className="overflow-hidden rounded-lg bg-white p-2 shadow-md">
+                <div className="overflow-hidden rounded-lg bg-white p-2  border-orange-400 border-2">
                   <Image
                     src={insumo.imagen || "/placeholder.svg"}
                     width={200}
@@ -322,6 +324,8 @@ export default function ElementosProteccion() {
               </div>
             ))}
           </SimpleCarousel>
+          </div>
+          </div>
         </div>
       </div>
     </div>
