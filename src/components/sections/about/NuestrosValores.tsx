@@ -22,7 +22,7 @@ const NuestrosValores = () => {
       {/* Imagen de fondo con overlay */}
       
       <div className="absolute inset-0">
-        <div className="w-full h-full bg-center bg-cover bg-fixed opacity-60 clip-bottom-curve" style={{ backgroundImage: `url('/img/fondo-valores.png')` }}></div>
+        <div className="w-full h-[600px] bg-center bg-cover bg-fixed opacity-60 clip-bottom-curve" style={{ backgroundImage: `url('/img/fondo-valores.png')`, minHeight: '600px' }}></div>
       </div>
       {/* Overlay y contenido */}
       <div className="relative z-10 max-w-5xl mx-auto px-6">
