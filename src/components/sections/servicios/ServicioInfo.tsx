@@ -55,6 +55,7 @@ export default function SeccionContacto() {
           >
             SOLICITAR COTIZACIÓN
           </a>
+          
         </div>
       </div>
     </section>

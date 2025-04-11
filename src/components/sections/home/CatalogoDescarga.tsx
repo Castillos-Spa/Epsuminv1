@@ -1,3 +1,4 @@
+import PdfDownloadButton from "@/components/ui/PdfButton"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -32,12 +33,7 @@ export default function CatalogoProductos() {
               Explore nuestra amplia gama de equipos y herramientas especializadas para la industria minera.
             </p>
 
-            <Link
-              href="#descargar"
-              className="inline-flex items-center justify-center rounded-full border-2 border-teal-600 px-8 py-3 text-lg font-medium text-blue-950 transition-colors hover:bg-teal-600 hover:text-white"
-            >
-              DESCARGAR
-            </Link>
+            <PdfDownloadButton  className="rounded-full border-2 border-white px-6 py-2 font-medium text-white bg-blue-700 transition transform duration-300 hover:scale-105 hover:bg-blue-600"/>
           </div>
         </div>
       </div>
