@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4">Enlaces Rápidos</h3>
+            <h3 className="text-xl font-bold mb-4">Monedas de Cambio</h3>
             <ul className="space-y-3">
               <li className="mb-5 ">
                 <span>💰 Valor UF: {uf ? `$${uf.toLocaleString('es-CL', { minimumFractionDigits: 2 })}` : 'Cargando...'}</span>
