@@ -62,31 +62,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">Enlaces Rápidos</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link href="/" className="hover:text-amber-600 transition-colors">Inicio</Link>
-              </li>
-              <li>
-                <Link href="#productos" className="hover:text-amber-600 transition-colors">Productos</Link>
-              </li>
-              <li>
-                <Link href="#servicios" className="hover:text-amber-600 transition-colors">Servicios</Link>
-              </li>
-              <li>
-                <Link href="#nosotros" className="hover:text-amber-600 transition-colors">Acerca de Nosotros</Link>
-              </li>
-              <li>
-                <Link href="/noticias" className="hover:text-amber-600 transition-colors">Noticias</Link>
-              </li>
-              <li>
-                <Link href="#contacto" className="hover:text-amber-600 transition-colors">Contacto</Link>
-              </li>
-            </ul>
-          </div>
 
           {/* Contact Info */}
           <div>
