@@ -35,7 +35,7 @@ const Navbar = () => {
               <Link href="#productos" className="text-black hover:text-primary transition-colors">Productos</Link>
               <Link href="#servicios" className="text-black hover:text-primary transition-colors">Servicios</Link>
               <Link href="#nosotros" className="text-black hover:text-primary transition-colors">Nosotros</Link>
-              <Link href="#contacto" className="text-black hover:text-primary transition-colors">Contacto</Link>
+              <Link href="#contacto" className="text-black hover:text-primary transition-colors">Cotizar</Link>
             </div>
           </div>
 

@@ -51,7 +51,7 @@ export default function SeccionContacto() {
         <div className="flex bg-blue-950 px-19 py-4">
           <a
             href="#cotizacion"
-            className="rounded-full border-2 border-white px-6 py-2 font-medium text-white transition transform duration-300 hover:scale-105 hover:bg-blue-800"
+            className="rounded-full border-2 border-white px-6 py-2 font-medium text-white bg-amber-600 transition transform duration-300 hover:scale-105 hover:bg-blue-800"
           >
             SOLICITAR COTIZACIÓN
           </a>
