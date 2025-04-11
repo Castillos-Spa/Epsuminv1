@@ -27,7 +27,7 @@ export default function Home() {
       <Hero/> {/* Seccion principal con fondo con imagen carrusel */}
       {/* <WhatsAppButton phoneNumber="56957337491"/> Boton de WhatsApp */}
       <FloatingWhatsApp
-        phoneNumber="56957337491"
+        phoneNumber="56961463898"
         accountName="EPSUMIN"
         allowClickAway={false}
         notification={true}

@@ -29,7 +29,7 @@ const slides = [
   },
   {
     id: 3,
-    image: '/img/hero-3.jpg',
+    image: '/img/fondo_carrusel4.png',
     imagen2: '/img/maquina.png',
     title: 'Atención Personalizada',
     description: 'Expertos a su servicio en todo momento',
@@ -76,6 +76,14 @@ const Hero = () => {
     [emblaApi]
   );
 
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+  
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+
   return (
     <div className="relative">
       {/* Carrusel principal */}
@@ -99,8 +107,8 @@ const Hero = () => {
                       {/* Panel izquierdo: contenido de texto */}
                       <div className=" w-3/4 md:w-3/4 md:pr-8 xl:w-1/2 pb-6 md:pb-0 xl:pb-18 z-10">
                         <div className="bg-white/60 p-8 md:p-10 rounded-2xl shadow-md">
-                          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-blue-500">{slide.title}</h1>
-                          <p className="text-lg md:text-xl mb-6 text-ocre">{slide.description}</p>
+                          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-blue-950">{slide.title}</h1>
+                          <p className="text-lg md:text-xl mb-6 text-amber-600">{slide.description}</p>
                           <Link href={slide.buttonUrl} passHref>
                             <Button 
                               variant="outline"
@@ -117,6 +125,37 @@ const Hero = () => {
               </div>
             ))}
           </div>
+          <button 
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full z-20"
+            onClick={scrollPrev}
+            aria-label="Anterior"
+          >
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              className="h-6 w-6 text-blue-950" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+
+          <button 
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full z-20"
+            onClick={scrollNext}
+            aria-label="Siguiente"
+          >
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              className="h-6 w-6 text-blue-950" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
         </div>
 
         {/* Indicadores del carrusel */}
