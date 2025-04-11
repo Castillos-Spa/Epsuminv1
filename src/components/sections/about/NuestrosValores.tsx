@@ -1,7 +1,5 @@
 "use client";
 import React, {useEffect} from 'react';
-import Image from 'next/image';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaUsers, FaLeaf, FaShieldAlt, FaStar } from 'react-icons/fa';
 
@@ -13,21 +11,15 @@ const valores = [
 ];
 
 const NuestrosValores = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
   return (
     <section className="py-16 bg-white text-center relative overflow-hidden">
       <h2 className="text-2xl font-bold text-blue-950 uppercase mb-12">Nuestros Valores</h2>
       {/* Imagen de fondo con overlay */}
-      
       <div className="absolute inset-0">
         <div className="w-full h-[600px] bg-center bg-cover bg-fixed opacity-60 clip-bottom-curve" style={{ backgroundImage: `url('/img/fondo-valores.png')`, minHeight: '600px' }}></div>
       </div>
       {/* Overlay y contenido */}
       <div className="relative z-10 max-w-5xl mx-auto px-6">
-        
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {valores.map((valor) => (
             <div key={valor.id} className="flex flex-col items-center hover:scale-105 transition-transform duration-300">

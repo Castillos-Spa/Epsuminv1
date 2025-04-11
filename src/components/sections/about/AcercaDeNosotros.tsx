@@ -2,13 +2,8 @@
 import React, {useEffect} from 'react';
 import Image from 'next/image';
 import { CheckCircle, Leaf, BadgeCheck } from 'lucide-react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const AcercaDeNosotros = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
   return (
     <section className="py-16 bg-white" id="nosotros">
       <div className="container px-4 flex flex-col md:flex-row items-center gap-10">
@@ -22,7 +17,7 @@ const AcercaDeNosotros = () => {
             />
           </div>
         </div>
-        <div className="w-full md:w-1/2 text-center md:text-left flex flex-col items-center md:items-start gap-4 " data-aos="fade-left" data-aos-duration="100" data-aos-offset="200">
+        <div className="w-full md:w-1/2 text-center md:text-left flex flex-col items-center md:items-start gap-4 ">
           <h2 className="text-3xl font-bold text-blue-950 mb-4">¿Quiénes somos?</h2>
           <div className="bg-blue-950 text-white p-6 rounded-lg">
             <p className="text-lg">
