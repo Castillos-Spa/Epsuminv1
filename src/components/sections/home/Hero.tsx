@@ -99,8 +99,8 @@ const Hero = () => {
                       {/* Panel izquierdo: contenido de texto */}
                       <div className=" w-3/4 md:w-3/4 md:pr-8 xl:w-1/2 pb-6 md:pb-0 xl:pb-18 z-10">
                         <div className="bg-white/60 p-8 md:p-10 rounded-2xl shadow-md">
-                          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-blue-500">{slide.title}</h1>
-                          <p className="text-lg md:text-xl mb-6 text-ocre">{slide.description}</p>
+                          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-blue-950">{slide.title}</h1>
+                          <p className="text-lg md:text-xl mb-6 text-amber-600">{slide.description}</p>
                           <Link href={slide.buttonUrl} passHref>
                             <Button 
                               variant="outline"

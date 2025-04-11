@@ -37,7 +37,7 @@ const ProductCard2 = ({
         <div className="w-full">
           <Button
             variant="primary"
-            className="text-black rounded-lg bg-azul-claro/60 hover:bg-azul-claro/30 text-left" // Changed justify-start to text-left
+            className="text-black rounded-lg bg-azul-claro/60 hover:bg-azul-claro/30 text-left " // Changed justify-start to text-left
             onClick={handleVerDetalles}
           >
             Ver Mas
