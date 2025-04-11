@@ -1,7 +1,6 @@
 "use client";
 import { Mail, Phone } from "lucide-react"
 import Image from "next/image"
-import { useEffect } from "react"
 
 export default function SeccionContacto() {
   return (
@@ -21,7 +20,7 @@ export default function SeccionContacto() {
                 Contáctanos para obtener una cotización personalizada o más información sobre nuestros servicios
               </p>
             </div>
-            <div className="relative z-20 md:translate-y-50 flex justify-center items-center animate-slide-in-right" >
+            <div className="relative z-20 translate-y-25 xl:translate-y-50 md:translate-y-55 md:translate-x-25 xl:-translate-x-35 flex justify-center items-center animate-slide-in-right" >
               <Image
                 src="/img/asistente.png"
                 alt="Persona con laptop"
