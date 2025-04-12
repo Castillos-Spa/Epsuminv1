@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function SeccionContacto() {
   return (
-    <section className="relative bg-white w-full animate-fade-in">
+    <section className="relative bg-white w-full animate-fade-in" id="servicios">
       <div className="w-full">
         {/* Contenido principal con posición ajustada */}
         <div className="pt-4 w-full px-19">

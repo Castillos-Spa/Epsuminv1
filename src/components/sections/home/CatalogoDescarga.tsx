@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function CatalogoProductos() {
   return (
-    <section className="relative w-full overflow-hidden bg-white py-16">
+    <section className="relative w-full overflow-hidden bg-white py-16" id="contacto">
       {/* Fondo curvo */}
       <div className="absolute left-0 top-0 h-full w-4/5 md:w-3/5 xl:w-3/5 rounded-r-full bg-blue-950"></div>
 

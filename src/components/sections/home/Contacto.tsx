@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contacto = () => {
   return (
-    <section className="py-16 bg-gray-50" id="contacto">
+    <section className="py-16 bg-gray-50" id="productos">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="flex flex-col md:flex-row">
@@ -59,7 +59,7 @@ const Contacto = () => {
             <div className="md:w-1/2 p-8">
               <h3 className="text-2xl font-bold text-amber-600 mb-6">Solicite Cotización</h3>
               <form 
-                action="https://formsubmit.co/admin@ewc.cl" 
+                action="https://formsubmit.co/contacto@epsumin.cl" 
                 method="POST"
               >
                 <div className="mb-4">
@@ -115,10 +115,6 @@ const Contacto = () => {
                     placeholder="Describa su requerimiento"
                   ></textarea>
                 </div>
-
-                {/* Ocultos para configuración extra */}
-                <input type="hidden" name="_next" value="https://epsumin.cl/gracias" />
-                <input type="hidden" name="_captcha" value="false" />
 
                 <button 
                   type="submit" 
