@@ -4,7 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/home/Hero";
 import ProductosDestacados from "@/components/sections/home/productoDestacado/ProductosDestacados2";
-import Catalogo from "@/components/sections/productos/Catalogo";
+import Catalogo from "@/components/sections/productos/catalogo/catalogoepp";
 import ServicioInfo from "@/components/sections/servicios/ServicioInfo";
 // import Maquinaria from "@/components/sections/home/Maquinaria";
 import Testimonios from "@/components/sections/home/Testimonios";
