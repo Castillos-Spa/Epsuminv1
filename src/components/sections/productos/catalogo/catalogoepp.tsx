@@ -154,23 +154,23 @@ export default function ElementosProteccion() {
 
             {/* Galería de imágenes */}
             <div className="px-4 py-6">
-              <SimpleCarousel itemsToShow={{ mobile: 1, tablet: 2, desktop: 4 }} className="z-10 p-4 md:p-8 lg:p-16">
-                {elementosProteccion.map((insumo) => (
-                  <div key={insumo.id} className="p-2">
-                    <div className="overflow-hidden rounded-lg bg-white p-2 border-orange-400 border-2">
-                      <Image
-                        src={insumo.imagen || "/placeholder.svg"}
-                        width={200}
-                        height={200}
-                        alt={insumo.nombre}
-                        className="h-auto w-full object-cover"
-                        loading="lazy" // Add this for lazy loading
-                        priority={false} // Only set true for above-the-fold images
-                      />
-                    </div>
-                  </div>
-                ))}
-              </SimpleCarousel>
+            <SimpleCarousel itemsToShow={{ mobile: 1, tablet: 2, desktop: 4 }} className="z-10 p-4 md:p-8 lg:p-16">
+            {elementosProteccion.map((insumo) => (
+                <div key={insumo.id} className="p-2">
+                <div className="overflow-hidden rounded-lg bg-white p-2 border-orange-400 border-2">
+                    <Image
+                    src={insumo.imagen || "/placeholder.svg"}
+                    width={200}
+                    height={200}
+                    alt={insumo.nombre}
+                    className="h-auto w-full object-cover"
+                    loading="lazy"
+                    quality={80}
+                    />
+                </div>
+                </div>
+            ))}
+            </SimpleCarousel>
             </div>
           </div>
           </div>
