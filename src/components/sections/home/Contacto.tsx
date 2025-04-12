@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contacto = () => {
   return (
-    <section className="py-16 bg-gray-50" id="productos">
+    <section className="py-16 bg-gray-50" id="contacto">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="flex flex-col md:flex-row">
