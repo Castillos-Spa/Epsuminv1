@@ -1,6 +1,7 @@
 "use client";
-import { Mail, Phone } from "lucide-react"
+import { ArrowRight, Mail, Phone } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link";
 
 export default function SeccionContacto() {
   return (
@@ -19,6 +20,18 @@ export default function SeccionContacto() {
               <p className=" text-3xl text-amber-600">
                 Contáctanos para obtener una cotización personalizada o más información sobre nuestros servicios
               </p>
+              <div className="mt-6">
+                <Link
+                  href="#contacto"
+                  className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-[#e67e22] to-[#f39c12] rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group"
+                >
+                  <span className="relative z-10 flex items-center">
+                    SOLICITAR COTIZACIÓN
+                    <ArrowRight className="ml-2 h-5 w-5 animate-bounce" />
+                  </span>
+                  <span className="absolute inset-0 rounded-full animate-pulse bg-gradient-to-r from-[#e67e22] to-[#f39c12] opacity-75 blur-sm"></span>
+                </Link>
+              </div>
             </div>
             <div className="relative z-20 translate-y-25 xl:translate-y-50 md:translate-y-55 md:translate-x-25 xl:-translate-x-35 flex justify-center items-center animate-slide-in-right" >
               <Image
@@ -48,13 +61,8 @@ export default function SeccionContacto() {
             </div>
           </div>
         </div>
-        <div className="flex bg-blue-950 px-19 py-4">
-          <a
-            href="#cotizacion"
-            className="rounded-full border-2 border-white px-6 py-2 font-medium text-white bg-amber-600 transition transform duration-300 hover:scale-105 hover:bg-blue-800"
-          >
-            SOLICITAR COTIZACIÓN
-          </a>
+        <div className="flex bg-blue-950 px-19 py-4 h-16">
+          
           
         </div>
       </div>
