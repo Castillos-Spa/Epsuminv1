@@ -11,7 +11,7 @@ import Link from 'next/link';
 const slides = [
   {
     id: 1,
-    image: '/img/fondo6.jpeg',
+    image: '/img/fondo7.png',
     // imagen2: '/img/torreta.png',
     title: 'Equipos y Suministros Industriales',
     description: 'Soluciones integrales para su empresa',
@@ -20,7 +20,7 @@ const slides = [
   },
   {
     id: 2,
-    image: '/img/fondo5.jpeg',
+    image: '/img/fondo8.png',
     imagen2: '/img/torreta.png',
     title: 'Seguridad y Calidad Garantizada',
     description: 'Trabajamos con las mejores marcas del mercado',
@@ -29,7 +29,7 @@ const slides = [
   },
   {
     id: 3,
-    image: '/img/fondo_carrusel4.png',
+    image: '/img/fondo9.png',
     imagen2: '/img/maquina.png',
     title: 'Atención Personalizada',
     description: 'Expertos a su servicio en todo momento',
