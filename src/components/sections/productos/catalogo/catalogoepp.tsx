@@ -164,6 +164,8 @@ export default function ElementosProteccion() {
                         height={200}
                         alt={insumo.nombre}
                         className="h-auto w-full object-cover"
+                        loading="lazy" // Add this for lazy loading
+                        priority={false} // Only set true for above-the-fold images
                       />
                     </div>
                   </div>

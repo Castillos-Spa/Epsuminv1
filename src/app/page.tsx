@@ -15,17 +15,29 @@ import NuestrosObjetivos from "@/components/sections/about/NuestrosObjetivos";
 import NuestrosValores from "@/components/sections/about/NuestrosValores";
 import Contacto from "@/components/sections/home/Contacto";
 import CatalogoDescarga from "@/components/sections/home/CatalogoDescarga";
-// import WhatsAppButton from "@/components/wsp/WhatsAppButton";
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
+import dynamic from 'next/dynamic';
+import LazyLoad from '@/components/ui/LazyLoad';
 
+// Dynamically import components that are not needed immediately
+const DynamicCatalogo = dynamic(() => import('@/components/sections/productos/catalogo/catalogoepp'), {
+  loading: () => <div className="h-96 w-full bg-gray-100 animate-pulse rounded-md"></div>
+});
 
+const DynamicTestimonios = dynamic(() => import('@/components/sections/home/Testimonios'), {
+  loading: () => <div className="h-80 w-full bg-gray-100 animate-pulse rounded-md"></div>
+});
+
+const DynamicNoticias = dynamic(() => import('@/components/sections/home/Noticias'), {
+  loading: () => <div className="h-80 w-full bg-gray-100 animate-pulse rounded-md"></div>
+});
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Navbar /> {/* Barra de Navegacion*/}
       <Hero/> {/* Seccion principal con fondo con imagen carrusel */}
-      {/* <WhatsAppButton phoneNumber="56957337491"/> Boton de WhatsApp */}
+      
       <FloatingWhatsApp
         phoneNumber="56961463898"
         accountName="EPSUMIN"
@@ -34,18 +46,49 @@ export default function Home() {
         chatMessage="Hola, ¿en qué puedo ayudarte?"
         avatar="/img/avatar.png"
       />
+      
       <ProductosDestacados/> {/* seccion de productos destacados  */}
-      <CatalogoDescarga/> {/* seccion de catalogo de productos y servicios */}
-      <Catalogo/> {/* seccion de catalogo de productos y servicios */}
-      <ServicioInfo/> {/* Seccion de necesita nuestros servicios */}
-      {/* <Maquinaria/> Seccion de maquinaria proximamente */}
-      <Testimonios/> {/* seccion de google comentarios */}
-      <Noticias/> {/* seccion de noticias del valle */}
-      <MarcasAsociadas/> {/* Licitaciones proximamente */}
-      <AcercaDeNosotros/> {/* Seccion de acerca de nosotros */}
-      <NuestrosObjetivos/> {/* Seccion de nuestros objetivos */}
-      <NuestrosValores/> {/* Seccion de nuestros valores */}
-      <Contacto/> {/* form para cotizaciones */}
+      
+      <LazyLoad>
+        <CatalogoDescarga/> {/* seccion de catalogo de productos y servicios */}
+      </LazyLoad>
+      
+      <LazyLoad>
+        <DynamicCatalogo/> {/* seccion de catalogo de productos y servicios */}
+      </LazyLoad>
+      
+      <LazyLoad>
+        <ServicioInfo/> {/* Seccion de necesita nuestros servicios */}
+      </LazyLoad>
+      
+      <LazyLoad>
+        <DynamicTestimonios/> {/* seccion de google comentarios */}
+      </LazyLoad>
+      
+      <LazyLoad>
+        <DynamicNoticias/> {/* seccion de noticias del valle */}
+      </LazyLoad>
+      
+      <LazyLoad>
+        <MarcasAsociadas/> {/* Licitaciones proximamente */}
+      </LazyLoad>
+      
+      <LazyLoad>
+        <AcercaDeNosotros/> {/* Seccion de acerca de nosotros */}
+      </LazyLoad>
+      
+      <LazyLoad>
+        <NuestrosObjetivos/> {/* Seccion de nuestros objetivos */}
+      </LazyLoad>
+      
+      <LazyLoad>
+        <NuestrosValores/> {/* Seccion de nuestros valores */}
+      </LazyLoad>
+      
+      <LazyLoad>
+        <Contacto/> {/* form para cotizaciones */}
+      </LazyLoad>
+      
       <Footer/>
     </main>
   );
