@@ -54,7 +54,7 @@ const Navbar = () => {
               href="https://wa.me/56912345678" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-orange-400 hover:text-[#25D366] transition-colors"
+              className="text-orange-400 hover:text-blue-950 transition-colors"
               aria-label="LinkedIn"
             >
               <FaLinkedin size={22} />
