@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { FaInstagram, FaWhatsapp, FaFacebook, FaBars, FaTimes } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp, FaFacebook, FaBars, FaTimes, FaLinkedin } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,9 +55,9 @@ const Navbar = () => {
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-orange-400 hover:text-[#25D366] transition-colors"
-              aria-label="WhatsApp"
+              aria-label="LinkedIn"
             >
-              <FaWhatsapp size={22} />
+              <FaLinkedin size={22} />
             </a>
             <a 
               href="https://www.facebook.com/epsumin" 

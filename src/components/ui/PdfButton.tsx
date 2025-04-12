@@ -12,7 +12,8 @@ export default function PdfDownloadButton({ className = "" }: PdfDownloadButtonP
   const [isLoading, setIsLoading] = useState(false);
   
   // ID del PDF en Drive - Reemplaza con tu ID real
-  const pdfId = "14skQ9Q3uTj59E7PA0x-qT2NrZsXiJ6dV";
+ 
+  const pdfId = "14XwdGI1YOfUoli9hSKRgELtudvP8hmEe";
   const pdfUrl = `https://drive.google.com/uc?export=download&id=${pdfId}`;
   
   const handleDownload = () => {
