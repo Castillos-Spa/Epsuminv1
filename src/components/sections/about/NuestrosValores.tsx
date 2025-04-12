@@ -1,5 +1,5 @@
 "use client";
-import React, {useEffect} from 'react';
+import React from 'react';
 import 'aos/dist/aos.css';
 import { FaUsers, FaLeaf, FaShieldAlt, FaStar } from 'react-icons/fa';
 

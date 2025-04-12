@@ -1,15 +1,15 @@
 'use client';
-import React, { use } from 'react';
+import React from 'react';
 import Image from 'next/image';
 
-const marcas = [
-  { id: 1, nombre: 'DeWalt', logo: '/marcas/dewalt.png' },
-  { id: 2, nombre: 'Bosch', logo: '/marcas/bosch.png' },
-  { id: 3, nombre: 'Stanley', logo: '/marcas/stanley.png' },
-  { id: 4, nombre: '3M', logo: '/marcas/3m.png' },
-  { id: 5, nombre: 'Makita', logo: '/marcas/makita.png' },
-  { id: 6, nombre: 'Milwaukee', logo: '/marcas/milwaukee.png' },
-];
+// const marcas = [
+//   { id: 1, nombre: 'DeWalt', logo: '/marcas/dewalt.png' },
+//   { id: 2, nombre: 'Bosch', logo: '/marcas/bosch.png' },
+//   { id: 3, nombre: 'Stanley', logo: '/marcas/stanley.png' },
+//   { id: 4, nombre: '3M', logo: '/marcas/3m.png' },
+//   { id: 5, nombre: 'Makita', logo: '/marcas/makita.png' },
+//   { id: 6, nombre: 'Milwaukee', logo: '/marcas/milwaukee.png' },
+// ];
 
 const MarcasAsociadas = () => {
   return (

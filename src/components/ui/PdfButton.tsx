@@ -4,14 +4,18 @@
 import { useState } from "react";
 import { FileDown } from "lucide-react"; // Icono para descarga
 
-export default function PdfDownloadButton({ className }) {
+interface PdfDownloadButtonProps {
+  className?: string;
+}
+
+export default function PdfDownloadButton({ className = "" }: PdfDownloadButtonProps) {
   const [isLoading, setIsLoading] = useState(false);
   
   // ID del PDF en Drive - Reemplaza con tu ID real
   const pdfId = "14skQ9Q3uTj59E7PA0x-qT2NrZsXiJ6dV";
   const pdfUrl = `https://drive.google.com/uc?export=download&id=${pdfId}`;
   
-  const handleDownload = (e) => {
+  const handleDownload = () => {
     // Opcional: Si quieres añadir un indicador de carga
     setIsLoading(true);
     
