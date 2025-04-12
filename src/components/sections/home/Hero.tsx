@@ -105,7 +105,7 @@ const Hero = () => {
                     <div className="flex flex-col md:flex-row md:-mt-32 xl:flex-row xl:-mt-38 items-center max-w-6xl mx-auto relative ">
                       
                       {/* Panel izquierdo: contenido de texto */}
-                      <div className=" w-3/4 md:w-3/4 md:pr-8 xl:w-1/2 pb-6 md:pb-0 xl:pb-18 z-10">
+                      <div className=" w-3/4 md:w-3/4 md:pr-8 xl:w-1/2 pb-6 md:pb-0 xl:pb-18 z-10 mb-16">
                         <div className="bg-white/60 p-8 md:p-10 rounded-2xl shadow-md">
                           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-blue-950">{slide.title}</h1>
                           <p className="text-lg md:text-xl mb-6 text-amber-600">{slide.description}</p>
@@ -173,7 +173,7 @@ const Hero = () => {
         </div>
         
         {/* Categorías integradas directamente en el carrusel */}
-        <div className="absolute bottom-0 left-0 right-0 z-10 w-full xl:mb-15 mb-0 md:mb-8 ">
+        <div className="absolute bottom-0 left-0 right-0 z-10 w-full xl:mb-15 mb-0 md:mb-8  ">
           <div className="w-full">
             <div className="bg-transparent rounded-t-xl p-8 md:p-0 xl:p-6 animate-slide-in">
               <div className="mx-auto max-w-7xl md:px-0 xl:px-40 px-4">
