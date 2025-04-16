@@ -22,7 +22,7 @@ const NuestrosValores = () => {
       <div className="relative z-10 max-w-5xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {valores.map((valor) => (
-            <div key={valor.id} className="flex flex-col items-center hover:scale-105 transition-transform duration-300">
+            <div key={valor.id} className="flex flex-col items-center hover:scale-125 transition-transform duration-300">
               {valor.icono}
               <h3 className="text-xl font-semibold text-blue-950 mb-3">{valor.titulo}</h3>
               <p className="text-blue-950 max-w-sw">{valor.descripcion}</p>
