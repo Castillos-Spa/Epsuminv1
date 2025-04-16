@@ -55,7 +55,7 @@ const MarcasAsociadas = () => {
           <div className="flex justify-center text-gray-800">
             <p className="w-full md:w-1/2 flex flex-col gap-2 text-xl">
               Estamos construyendo un espacio para conectar.<br />
-              Pronto, este será un punto de encuentro en El Valle para nuevas oportunidades y colaboraciones.
+              Pronto, este será un punto de encuentro en El Valle de Elqui para nuevas oportunidades y colaboraciones.
             </p>
           </div>
           <p className="text-2xl font-bold text-blue-950 mt-6">
