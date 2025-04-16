@@ -178,8 +178,8 @@ export default function ElementosProteccion() {
           <div className="relative mt-8 mb-6 bg-white rounded-xl shadow-md overflow-hidden z-10">
             {/* Título de elementos de protección */}
             <div className="relative text-right pt-6 px-6">
-              <h2 className="text-right text-xl font-bold text-gray-800 md:text-3xl">
-                Insumos para <span className="text-blue-800">Elementos de Protección</span>
+              <h2 className="text-right text-xl font-bold text-blue-950 md:text-3xl">
+                Insumos para Elementos de Protección
               </h2>
             </div>
 

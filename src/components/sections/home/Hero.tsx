@@ -11,7 +11,7 @@ import Link from 'next/link';
 const slides = [
   {
     id: 1,
-    image: '/img/fondo7.png',
+    image: '/img/fondo5.png',
     // imagen2: '/img/torreta.png',
     title: 'Equipos y Suministros Industriales',
     description: 'Soluciones integrales para su empresa',
@@ -95,8 +95,12 @@ const Hero = () => {
                 <Image 
                   src={slide.image} 
                   alt={slide.title} 
-                  fill 
-                  style={{ objectFit: 'cover' }}
+                  fill
+                  quality={100}
+                  sizes='100vw'
+                  style={{ 
+                    objectFit: 'cover',
+                    objectPosition: 'center' }}
                   priority
                 />
                 <div className="absolute inset-0 bg-primary/20 flex items-start md:items-center xl:items-center justify-center pt-32 md:pt-5 xl:pt-3">
