@@ -42,6 +42,15 @@ const Navbar = () => {
           {/* Redes sociales (derecha) - oculto en móvil, visible en md+ */}
           <div className="hidden md:flex md:flex-1 md:w-1/4 justify-end space-x-4">
             <a 
+              href="https://www.facebook.com/epsumin" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-orange-400 hover:text-[#1877F2] transition-colors"
+              aria-label="Facebook"
+            >
+              <FaFacebook size={22} />
+            </a>
+            <a 
               href="https://www.instagram.com/epsumin" 
               target="_blank" 
               rel="noopener noreferrer" 
@@ -58,15 +67,6 @@ const Navbar = () => {
               aria-label="LinkedIn"
             >
               <FaLinkedin size={22} />
-            </a>
-            <a 
-              href="https://www.facebook.com/epsumin" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-orange-400 hover:text-[#1877F2] transition-colors"
-              aria-label="Facebook"
-            >
-              <FaFacebook size={22} />
             </a>
           </div>
         </div>
