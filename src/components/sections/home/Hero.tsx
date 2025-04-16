@@ -29,7 +29,7 @@ const slides = [
   },
   {
     id: 3,
-    image: '/img/fondo9.png',
+    image: '/img/fondo6.png',
     imagen2: '/img/maquina.png',
     title: 'Atención Personalizada',
     description: 'Expertos a su servicio en todo momento',
