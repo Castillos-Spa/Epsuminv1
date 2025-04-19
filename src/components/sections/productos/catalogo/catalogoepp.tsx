@@ -49,7 +49,7 @@ export default function ElementosProteccion() {
             {/* Recuadro naranja con información */}
             <div className="w-full rounded-lg bg-orange-400 p-6 md:w-3/4 xl:w-3/4 2xl:w-3/4 md:ml-6 md:mr-6 2xl:mr-2">
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <div className="text-sm">
+                <div className="text-lg">
                   <div className="mb-1 flex items-center">
                     <span className="mr-2">•</span>
                     <span>Estructuras (metálicas y acrílicas)</span>
@@ -80,7 +80,7 @@ export default function ElementosProteccion() {
                   </div>
                 </div>
 
-                <div className="text-sm">
+                <div className="text-lg">
                   <div className="mb-1 flex items-center">
                     <span className="mr-2">•</span>
                     <span>Visítanos para conocer:</span>
