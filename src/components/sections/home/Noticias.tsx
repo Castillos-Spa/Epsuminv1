@@ -54,7 +54,7 @@ const Noticias = () => {
                   className="group-hover:scale-105 transition-transform duration-500 ease-in-out object-cover"
                   style={{ objectFit: 'cover' }}
                 />
-                <div className="absolute top-3 left-3 bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded">
+                <div className="absolute top-3 left-3 bg-blue-950 text-white text-xs font-bold px-2 py-1 rounded">
                   {noticia.categoria}
                 </div>
               </div>
