@@ -146,8 +146,9 @@ export default function ElementosProteccion() {
          {/* Sección de título y carrusel con fondo blanco compartido */}
           <div className="relative mt-8 mb-6 bg-white rounded-xl shadow-md overflow-hidden z-10">
             {/* Título de elementos de protección */}
+            <div className="relative text-left pt-6 px-6 "><h2 className="text-left text-7xl font-bold text-blue-800 md:text-4xl">EPSUMIN</h2></div>
             <div className="relative text-right pt-6 px-6">
-              <h2 className="text-right text-xl font-bold text-gray-800 md:text-3xl">
+              <h2 className="text-right text-xl font-bold text-blue-800 md:text-3xl">
                 Insumos para <span className="text-blue-800">Elementos de Protección</span>
               </h2>
             </div>
