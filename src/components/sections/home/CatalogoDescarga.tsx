@@ -10,7 +10,7 @@ export default function CatalogoProductos() {
       <div className="container relative mx-auto px-4">
         <div className="flex flex-col items-center md:flex-row md:items-center md:justify-between">
           {/* Columna de imágenes - Aumentada para imagen más grande */}
-          <div className="relative mb-8 w-full md:mb-0 md:w-3/5 xl:w-2/3 xl:-translate-x-50 md:-translate-x-20 -translate-x-15 2xl:-translate-x-90">
+          <div className="relative mb-8 w-full md:mb-0 md:w-3/5 xl:w-2/3 xl:-translate-x-50 md:-translate-x-20 -translate-x-15 2xl:-translate-x-90 xl:h-[620px] 2xl:h-[620px]">
             {/* Contenedor de imagen más grande */}
             <div className="relative">
               <Image
@@ -32,7 +32,7 @@ export default function CatalogoProductos() {
               Explore nuestra amplia gama de equipos y herramientas especializadas para la industria minera.
             </p>
 
-            <PdfDownloadButton  className="rounded-full border-2 border-white px-6 py-2 font-medium text-white bg-blue-700 transition transform duration-300 hover:scale-105 hover:bg-blue-600"/>
+            <PdfDownloadButton  className="rounded-full border-2 border-white px-6 py-2 font-medium text-white bg-blue-800 transition transform duration-300 hover:scale-105 hover:bg-blue-600"/>
           </div>
         </div>
       </div>
