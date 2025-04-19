@@ -5,18 +5,18 @@ export default function CatalogoProductos() {
   return (
     <section className="relative w-full overflow-hidden bg-white py-16" id="productos">
       {/* Fondo curvo */}
-      <div className="absolute left-0 top-0 h-full w-4/5 md:w-3/5 xl:w-3/5 rounded-r-full bg-blue-950"></div>
+      <div className="absolute left-0 top-0 h-full w-3/5 md:w-2/5 xl:w-2/5 rounded-r-full bg-blue-950"></div>
 
-      <div className="container relative mx-auto px-4">
+      <div className="container relative mx-auto px-4 max-w-4xl">
         <div className="flex flex-col items-center md:flex-row md:items-center md:justify-between">
           {/* Columna de imágenes - Aumentada para imagen más grande */}
-          <div className="relative mb-8 w-full md:mb-0 md:w-3/5 xl:w-2/3 xl:-translate-x-50 md:-translate-x-20 -translate-x-15 2xl:-translate-x-90">
+          <div className="relative mb-8 w-full md:mb-0 md:w-3/5 xl:w-3/3 xl:-translate-x-50 md:-translate-x-20 -translate-x-15 2xl:-translate-x-140">
             {/* Contenedor de imagen más grande */}
             <div className="relative">
               <Image
                 src="/img/tablet.png"
-                width={300}
-                height={600}
+                width={600}
+                height={900}
                 alt="Catálogo de productos en tablet"
                 className="h-auto w-full object-contain drop-shadow-2xl"
                 priority
@@ -25,14 +25,14 @@ export default function CatalogoProductos() {
           </div>
 
           {/* Columna de texto - Ajustada para balancear con imagen */}
-          <div className="w-full md:w-2/5 lg:w-1/3 md:pl-8">
-            <h2 className="mb-4 text-3xl font-bold md:text-blue-950 md:text-4xl text-amber-500 ">Catalogo de Productos</h2>
+          <div className="w-full md:w-2/5 lg:w-1/1 md:pl-8">
+            <h2 className="mb-4 text-3xl font-bold md:text-blue-950 md:text-4xl text-amber-600 ">Catalogo de Productos</h2>
 
             <p className="mb-8 text-xl font-medium text-amber-600 md:text-2xl">
-              Explore nuestra amplia gama de equipos y herramientas especializadas para la industria minera.
+            Descubra nuestra completa línea de equipos y herramientas diseñadas específicamente para satisfacer los más altos estándares de la industria minera.
             </p>
 
-            <PdfDownloadButton  className="rounded-full border-2 border-white px-6 py-2 font-medium text-white bg-blue-700 transition transform duration-300 hover:scale-105 hover:bg-blue-600"/>
+            <PdfDownloadButton  className="rounded-full border-2 border-white px-6 py-2 font-medium text-white bg-blue-950 transition transform duration-300 hover:scale-105 hover:bg-blue-600"/>
           </div>
         </div>
       </div>

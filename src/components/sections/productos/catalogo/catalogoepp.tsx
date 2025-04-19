@@ -52,7 +52,7 @@ export default function ElementosProteccion() {
             {/* Recuadro naranja con información */}
             <div className="w-full rounded-lg bg-orange-400 p-6 md:w-3/4 xl:w-3/4 2xl:w-3/4 md:ml-6 md:mr-6 2xl:mr-2">
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <div className="text-sm">
+                <div className="text-lg">
                   <div className="mb-1 flex items-center">
                     <span className="mr-2">•</span>
                     <span>Estructuras (metálicas y acrílicas)</span>
@@ -83,7 +83,7 @@ export default function ElementosProteccion() {
                   </div>
                 </div>
 
-                <div className="text-sm">
+                <div className="text-lg">
                   <div className="mb-1 flex items-center">
                     <span className="mr-2">•</span>
                     <span>Visítanos para conocer:</span>
@@ -121,7 +121,7 @@ export default function ElementosProteccion() {
 
               <div className="mt-4 flex justify-end">
                 <Link
-                  href="#contactar"
+                  href="#contacto"
                   className="rounded-full bg-white px-8 py-2 font-medium text-gray-800 transition-colors hover:bg-gray-100 border-2 border-azul-cyan-300"
                 >
                   CONTACTAR
