@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 import ProductCard2 from '@/components/common/ProductCard2';
+import { SimpleCarousel } from '@/components/ui/Carrousel';
 
 type Producto = {
   id: number;
@@ -59,6 +60,12 @@ const ProductosDestacados = () => {
 
   const handleVerDetalles = (id: number) => {
     console.log(`Ver detalles del producto ${id}`);
+    // Aquí podrías implementar la lógica del modal
+    const producto = productos.find(p => p.id === id);
+    if (producto) {
+      console.log('Producto encontrado:', producto);
+      // Implementar lógica para abrir el modal
+    }
   };
 
   return (
@@ -67,32 +74,41 @@ const ProductosDestacados = () => {
         <h2 className="text-3xl text-start ml-6 font-bold text-center text-blue-950 mb-12 my-4">
           Destacados de la Semana
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-4 mb-5">
-          {loading ? (
-            // Show skeleton cards while loading
-            Array(4).fill(0).map((_, index) => (
-              <div key={`skeleton-${index}`} className="slide-up">
+        
+        {loading ? (
+          // Mostrar carrusel de esqueletos mientras carga
+          <SimpleCarousel 
+            itemsToShow={{ mobile: 1, tablet: 2, desktop: 3 }}
+            className="p-4"
+            autoPlay={false}
+          >
+            {Array(6).fill(0).map((_, index) => (
+              <div key={`skeleton-${index}`} className="p-2">
                 <SkeletonProductCard />
               </div>
-            ))
-          ) : (
-            // Show actual product cards when loaded
-            productos.map((producto) => (
-              <div
-                key={producto.id}
-                className="slide-up text-amber-600"
-                style={{ animationDelay: `${producto.id * 100}ms` }}
-              >
-                <ProductCard2
-                  id={producto.id}
-                  nombre={producto.nombre}
-                  imagen={`https://drive.google.com/uc?id=${producto.imagenId}`}
-                  onVerDetalles={handleVerDetalles}
-                />
+            ))}
+          </SimpleCarousel>
+        ) : (
+          // Mostrar carrusel de productos cuando están cargados
+          <SimpleCarousel 
+            itemsToShow={{ mobile: 1, tablet: 2, desktop: 3 }}
+            className="p-4"
+            interval={3000}
+          >
+            {productos.map((producto) => (
+              <div key={producto.id} className="p-2">
+                <div className="slide-up text-amber-600" style={{ animationDelay: `${producto.id * 100}ms` }}>
+                  <ProductCard2
+                    id={producto.id}
+                    nombre={producto.nombre}
+                    imagen={`https://drive.google.com/uc?id=${producto.imagenId}`}
+                    onVerDetalles={handleVerDetalles}
+                  />
+                </div>
               </div>
-            ))
-          )}
-        </div>
+            ))}
+          </SimpleCarousel>
+        )}
       </div>
     </section>
   );
