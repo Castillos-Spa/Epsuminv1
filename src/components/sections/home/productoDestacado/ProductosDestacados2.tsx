@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 import ProductCard2 from '@/components/common/ProductCard2';
 import { SimpleCarousel } from '@/components/ui/Carrousel';
+import Image from 'next/image';
 
 type Producto = {
   id: number;
@@ -12,6 +13,7 @@ type Producto = {
   imagenId: string;
   isNew?: boolean;
   descuento?: number;
+  descripcion?: string; // Añadimos descripción
 };
 
 const CSV_URL = 'https://docs.google.com/spreadsheets/d/1PoR9PLmRMYKVFw777jURIOsT6Apzu_hUynO7oae_vHA/export?format=csv';
@@ -32,6 +34,9 @@ const SkeletonProductCard = () => (
 const ProductosDestacados = () => {
   const [productos, setProductos] = useState<Producto[]>([]);
   const [loading, setLoading] = useState(true);
+  // Estados para controlar el modal
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState<Producto | null>(null);
 
   useEffect(() => {
     Papa.parse(CSV_URL, {
@@ -48,6 +53,7 @@ const ProductosDestacados = () => {
             imagenId: item.imagenId,
             isNew: item.isNew?.toLowerCase() === 'true',
             descuento: item.descuento ? parseInt(item.descuento) : undefined,
+            descripcion: item.descripcion || 'Sin descripción disponible.' // Asegúrate de que la columna descripción exista en tu CSV
           }));
         setProductos(productosParseados);
         setLoading(false);
@@ -60,12 +66,19 @@ const ProductosDestacados = () => {
 
   const handleVerDetalles = (id: number) => {
     console.log(`Ver detalles del producto ${id}`);
-    // Aquí podrías implementar la lógica del modal
     const producto = productos.find(p => p.id === id);
     if (producto) {
       console.log('Producto encontrado:', producto);
-      // Implementar lógica para abrir el modal
+      // Abrir el modal con el producto seleccionado
+      setSelectedProduct(producto);
+      setIsModalOpen(true);
     }
+  };
+
+  // Función para cerrar el modal
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedProduct(null);
   };
 
   return (
@@ -93,7 +106,7 @@ const ProductosDestacados = () => {
           <SimpleCarousel 
             itemsToShow={{ mobile: 1, tablet: 2, desktop: 3 }}
             className="p-4"
-            interval={3000}
+            interval={4000}
           >
             {productos.map((producto) => (
               <div key={producto.id} className="p-2">
@@ -110,6 +123,69 @@ const ProductosDestacados = () => {
           </SimpleCarousel>
         )}
       </div>
+
+      {/* Modal que se muestra cuando isModalOpen es true */}
+      {isModalOpen && selectedProduct && (
+        <div className="modal-container">
+          {/* Overlay con efecto de desenfoque */}
+          <div 
+            className="modal-overlay"
+            onClick={closeModal}
+          ></div>
+          
+          {/* Contenedor del modal con animación */}
+          <div className="modal-content modal-animate">
+            {/* Cabecera del modal */}
+            <div className="flex items-center justify-between p-4 border-b border-gray-200">
+              <h3 className="text-xl font-semibold text-blue-950">
+                {selectedProduct.nombre}
+              </h3>
+              <button
+                onClick={closeModal}
+                className="text-gray-500 hover:text-gray-700 focus:outline-none"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            
+            {/* Cuerpo del modal */}
+            <div className="p-6">
+              <div className="flex flex-col md:flex-row items-start md:items-center mb-6">
+                <div className="w-24 h-24 relative bg-gray-100 rounded mb-4 md:mb-0">
+                  <Image
+                    src={`https://drive.google.com/uc?id=${selectedProduct.imagenId}`}
+                    alt={selectedProduct.nombre}
+                    fill
+                    className="object-contain p-2"
+                  />
+                </div>
+                <div className="md:ml-6 flex-1">
+                  <p className="text-lg font-medium text-blue-950 mb-2">{selectedProduct.nombre}</p>
+                  <p className="text-amber-600 font-semibold text-xl">
+                    ${selectedProduct.precio.toLocaleString()}
+                  </p>
+                </div>
+              </div>
+              
+              <div className="mb-6">
+                <h4 className="font-semibold text-gray-700 mb-2">Descripción:</h4>
+                <p className="text-gray-600 bg-gray-50 p-3 rounded-md">{selectedProduct.descripcion || "Sin descripción disponible"}</p>
+              </div>
+
+              <div className="flex justify-end mt-6">
+                <button
+                  className="px-6 py-2 bg-blue-700 text-white rounded-md hover:bg-blue-800 transition-colors"
+                  onClick={closeModal}
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
