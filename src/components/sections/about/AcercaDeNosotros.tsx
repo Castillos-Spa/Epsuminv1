@@ -25,7 +25,8 @@ const AcercaDeNosotros = () => {
               comprometidos en ser un socio estratégico confiable para nuestros clientes.
             </p>
           </div>
-          <div className="bg-white p-6 border-gray-200 rounded-b-lg items-center flex flex-col gap-4 text-center">
+          {/* Correr todo este div mas a la derecha en tamaño xl y 2xl */}
+          <div className="bg-white p-6 border-gray-200 rounded-b-lg items-center flex flex-col gap-4 text-center xl:ml-30 2xl:ml-60">
             <p className="text-gray-700 text-xl font-semibold mb-2">Proveemos</p>
             <div className="flex flex-wrap gap-6 mb-6">
               <div className="flex items-center gap-2">
