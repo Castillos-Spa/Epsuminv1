@@ -56,7 +56,7 @@ const ProductCard2 = ({
         <div className="w-full">
           <Button
             variant="primary"
-            className="text-black rounded-lg bg-azul-claro/60 hover:bg-azul-claro/30 text-left"
+            className="text-white rounded-lg bg-blue-950 hover:bg-amber-600 text-left"
             onClick={handleVerDetalles}
           >
             Ver Mas

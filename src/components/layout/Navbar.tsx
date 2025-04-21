@@ -8,6 +8,17 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  
+  const scrollToSection = (id: string) => {
+    setIsMenuOpen(false); // Cierra el menú móvil si está abierto
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
 
   return (
     <nav className="sticky top-0 z-50 py-4 bg-gradient-to-b from-white/80 to-white/90 backdrop-filter backdrop-blur-md shadow-md">
@@ -15,7 +26,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo (izquierda) */}
           <div className="flex-1 md:w-1/4">
-            <Link href="/" className="text-2xl font-bold text-blue-950">EPSUMIN</Link>
+            <Link href="/" className="text-2xl font-bold text-blue-950 hover:text-amber-600">EPSUMIN</Link>
           </div>
           
           {/* Burger menu para móvil */}
@@ -32,10 +43,10 @@ const Navbar = () => {
           {/* Navegación (centro) - oculto en móvil, visible en md+ */}
           <div className="hidden md:flex md:flex-1 md:w-2/4 justify-center">
             <div className="flex space-x-6 text-center">
-              <Link href="#productos" className="text-black hover:text-primary transition-colors">Productos</Link>
-              <Link href="#servicios" className="text-black hover:text-primary transition-colors">Servicios</Link>
-              <Link href="#nosotros" className="text-black hover:text-primary transition-colors">Nosotros</Link>
-              <Link href="#contacto" className="text-black hover:text-primary transition-colors">Cotizar</Link>
+              <Link href="#productos" className="text-black hover:text-amber-600 transition-colors">Productos</Link>
+              <Link href="#servicios" className="text-black hover:text-amber-600 transition-colors">Servicios</Link>
+              <Link href="#nosotros" className="text-black hover:text-amber-600 transition-colors">Nosotros</Link>
+              <Link href="#contacto" className="text-black hover:text-amber-600 transition-colors">Cotizar</Link>
             </div>
           </div>
 
