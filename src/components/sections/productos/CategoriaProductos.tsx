@@ -13,8 +13,8 @@ const categorias = [
 const CategoriaProductos = () => {
   return (
     <div className='w-full px-2  md:px-6 xl:px-10 items-center' >
-      <div className="bg-blue-950 py-2 sm:py-3 md:py-4 mb-4 rounded-full w-2xs mx-auto max-w-[200px] sm:max-w-[300px] mx-auto">
-        <h2 className=" font-bold text-center text-white px-2 bold">CONOCÉ NUESTRAS CATEGORÍAS</h2>
+      <div className="bg-blue-950/80 py-2 sm:py-3 md:py-4 mb-4 rounded-full w-2xs mx-auto max-w-[200px] sm:max-w-[300px] mx-auto">
+        <h2 className=" font-bold text-center text-white px-2 bold">Conoce Nuestras Categorías</h2>
       </div>
       {/* Grid con mejor espaciado responsivo */}
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-1 xl:gap-2 mx-1 md:mx-5 xl:mx-7 ">
