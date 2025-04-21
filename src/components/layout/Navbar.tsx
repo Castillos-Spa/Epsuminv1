@@ -8,17 +8,6 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  
-  // const scrollToSection = (id: string) => {
-  //   setIsMenuOpen(false); // Cierra el menú móvil si está abierto
-  //   const element = document.getElementById(id);
-  //   if (element) {
-  //     element.scrollIntoView({
-  //       behavior: "smooth",
-  //       block: "start",
-  //     });
-  //   }
-  // };
 
   return (
     <nav className="sticky top-0 z-50 py-4 bg-gradient-to-b from-white/80 to-white/90 backdrop-filter backdrop-blur-md shadow-md">
