@@ -117,7 +117,7 @@ const Hero = () => {
                       <div className="w-3/4 md:w-3/4 md:pr-8 xl:w-1/2 pb-6 md:pb-0 xl:pb-0 z-10 mb-16 xl:mb-120 2xl:mb-58">
                         <div className="bg-white/60 p-8 md:p-10 xl:p-8 rounded-2xl shadow-md">
                           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-blue-950">{slide.title}</h1>
-                          <p className="text-lg md:text-xl mb-6 text-amber-600">{slide.description}</p>
+                          <p className="text-lg md:text-xl mb-6 text-amber-600 font-bold bold">{slide.description}</p>
                           <Link href={slide.buttonUrl} passHref>
                             <Button
                               className="px-6 py-2 text-white bg-blue-950 rounded-full hover:bg-amber-600 hover:text-white transition-colors duration-300"
