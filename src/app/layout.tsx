@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "EPSUMIN",
-  description: "by Castillos Spa",
+  description: "by Castillos SPA",
 };
 
 export default function RootLayout({
