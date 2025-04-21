@@ -37,8 +37,8 @@ const CategoriaProductos = () => {
                 </div>
               </div>
               {/* Texto responsivo */}
-              <h3 className="text-xs sm:text-sm md:text-base font-medium text-center text-black 
-                           group-hover:text-white transition-colors px-1 md:px-1 xl:px-1
+              <h3 className="text-sm sm:text-sm md:text-base xl:text-lg text-bold font-medium text-center text-blue-950 
+                           group-hover:text-amber-600 transition-colors px-1 md:px-1 xl:px-1
                            line-clamp-2 h-[2.5em]">
                 {categoria.nombre}
               </h3>

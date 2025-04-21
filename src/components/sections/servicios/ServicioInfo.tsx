@@ -23,11 +23,11 @@ export default function SeccionContacto() {
               <div className="mt-6">
                 <Link
                   href="#contacto"
-                  className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-[#e67e22] to-[#f39c12] rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group"
+                  className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-[#e67e22] to-[#f39c12] rounded-full shadow-lg hover:shadow-xl transform hover:scale-125 transition-all duration-300 group"
                 >
                   <span className="relative z-10 flex items-center">
                     SOLICITAR COTIZACIÓN
-                    <ArrowRight className="ml-2 h-5 w-5 animate-bounce" />
+                    <ArrowRight className="ml-2 h-5 w-5 animate-bounce"/>
                   </span>
                   <span className="absolute inset-0 rounded-full animate-pulse bg-gradient-to-r from-[#e67e22] to-[#f39c12] opacity-75 blur-sm"></span>
                 </Link>

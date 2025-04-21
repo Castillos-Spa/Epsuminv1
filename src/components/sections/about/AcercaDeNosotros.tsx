@@ -8,7 +8,7 @@ const AcercaDeNosotros = () => {
     <section className="py-16 bg-white" id="nosotros">
       <div className="container px-4 flex flex-col md:flex-row items-center gap-10">
         <div className="relative md:w-1/2 flex justify-center md:justify-end -mr-5">
-          <div className="relative w-[300px] h-[300px] md:w-[640px] md:h-[640px] rounded-full overflow-hidden shadow-lg z-10 transition-transform duration-700 hover:scale-105">
+          <div className="relative w-[300px] h-[300px] md:w-[640px] md:h-[640px] rounded-full overflow-hidden shadow-lg z-10 transition-transform duration-700 hover:scale-115">
             <Image 
               src="/img/about-us.png"
               alt="Trabajador EPSUMIN"

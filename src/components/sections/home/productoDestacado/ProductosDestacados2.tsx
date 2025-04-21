@@ -106,7 +106,7 @@ const ProductosDestacados = () => {
           <SimpleCarousel 
             itemsToShow={{ mobile: 1, tablet: 2, desktop: 3 }}
             className="p-4"
-            interval={4000}
+            interval={3000}
           >
             {productos.map((producto) => (
               <div key={producto.id} className="p-2">
@@ -176,7 +176,7 @@ const ProductosDestacados = () => {
 
               <div className="flex justify-end mt-6">
                 <button
-                  className="px-6 py-2 bg-blue-700 text-white rounded-md hover:bg-blue-800 transition-colors"
+                  className="px-6 py-2 bg-blue-950 text-white rounded-md hover:bg-amber-600 transition-colors"
                   onClick={closeModal}
                 >
                   Cerrar

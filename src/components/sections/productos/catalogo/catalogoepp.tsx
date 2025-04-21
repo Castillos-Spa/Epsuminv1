@@ -119,7 +119,7 @@ export default function ElementosProteccion() {
               <div className="mt-3 flex justify-end">
                 <Link
                   href="#contacto"
-                  className="rounded-full bg-white px-8 py-2 font-medium text-gray-800 transition-colors hover:bg-gray-100 border-2 border-azul-cyan-300"
+                  className="rounded-full bg-white px-8 py-2 font-medium text-black transition-colors hover:bg-blue-950 hover:text-white  border-azul-cyan-300"
                 >
                   CONTACTAR
                 </Link>
