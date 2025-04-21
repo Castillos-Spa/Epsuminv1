@@ -44,8 +44,8 @@ const Navbar = () => {
             <a 
               href="https://www.facebook.com/epsumin" 
               target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-orange-400 hover:text-[#1877F2] transition-colors"
+              rel="noopener noreferrer"
+              className="text-amber-600 hover:text-[#1877F2] transition-colors"
               aria-label="Facebook"
             >
               <FaFacebook size={22} />
@@ -54,7 +54,7 @@ const Navbar = () => {
               href="https://www.instagram.com/epsumin" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-orange-400 hover:text-[#E1306C] transition-colors"
+              className="text-amber-600 hover:text-[#E1306C] transition-colors"
               aria-label="Instagram"
             >
               <FaInstagram size={22} />
@@ -63,7 +63,7 @@ const Navbar = () => {
               href="https://wa.me/56912345678" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-orange-400 hover:text-blue-950 transition-colors"
+              className="text-amber-600 hover:text-blue-950 transition-colors"
               aria-label="LinkedIn"
             >
               <FaLinkedin size={22} />
