@@ -110,11 +110,11 @@ const Hero = () => {
                 <div className="absolute bottom-0 left-0 right-0 h-80 bg-gradient-to-t from-white to-transparent z-[5]" />
                 <div className="absolute inset-0 bg-primary/20 flex items-start md:items-center xl:items-center justify-center pt-32 md:pt-5 xl:pt-0">
                   {/* Contenido principal - mejor posicionado en XL */}
-                  <div className="container mx-auto px-4 md:px-12 xl:px-24 2xl:px-16">
+                  <div className="container mx-auto px-4 md:px-12 xl:px-24 2xl:px-16 mt-0 mb-40">
                     <div className="flex flex-col md:flex-row md:-mt-32 xl:flex-row xl:-mt-12 2xl:-mt-16 items-center max-w-6xl mx-auto relative">
                       
                       {/* Panel izquierdo: contenido de texto */}
-                      <div className="w-3/4 md:w-3/4 md:pr-8 xl:w-1/2 pb-6 md:pb-0 xl:pb-0 z-10 mb-16 xl:mb-120 2xl:mb-58">
+                      <div className="w-3/4 md:w-3/5 md:pr-8 xl:w-2/3  pb-6 md:pb-0 xl:pb-0 z-10 mb-16 xl:mb-140 2xl:mb-58 ">
                         <div className="bg-white/60 p-8 md:p-10 xl:p-8 rounded-2xl shadow-md">
                           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-blue-950">{slide.title}</h1>
                           <p className="text-lg md:text-xl mb-6 text-amber-600 font-bold bold">{slide.description}</p>
@@ -181,10 +181,10 @@ const Hero = () => {
         </div>
         
         {/* Categorías integradas directamente en el carrusel */}
-        <div className="absolute bottom-0 left-0 right-0 z-10 w-full mb-4 md:mb-8 xl:mb-16">
+        <div className="absolute  bottom-0 left-0 right-0 z-10 w-full mb-4 md:mb-8 xl:mb-16">
           <div className="w-full">
             <div className="bg-transparent rounded-t-xl p-8 md:p-0 xl:p-4 animate-slide-in">
-              <div className="mx-auto max-w-7xl md:px-0 xl:px-28 px-4">
+              <div className="mx-auto max-w-7xl md:px-0 xl:px-20 px-4">
                 <CategoriaProductos />
               </div>
             </div>
