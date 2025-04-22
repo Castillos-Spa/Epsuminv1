@@ -10,15 +10,15 @@ export default function CatalogoProductos() {
       <div className="container relative mx-auto px-4 max-w-4xl">
         <div className="flex flex-col items-center md:flex-row md:items-center md:justify-between">
           {/* Columna de imágenes - Aumentada para imagen más grande */}
-          <div className="relative mb-8 w-full md:mb-0 md:w-3/5 xl:w-3/3 xl:-translate-x-50 md:-translate-x-20 -translate-x-15 2xl:-translate-x-140">
+          <div className=" mb-8 w-full md:mb-0 md:w-3/5 xl:w-3/3 xl:-translate-x-50 md:-translate-x-20 -translate-x-15 2xl:-translate-x-130">
             {/* Contenedor de imagen más grande */}
             <div className="relative">
               <Image
-                src="/img/tablet.png"
+                src="/img/movil.png"
                 width={600}
                 height={900}
                 alt="Catálogo de productos en tablet"
-                className="h-auto w-full object-contain drop-shadow-2xl hover:scale-135"
+                className="h-auto w-full object-contain drop-shadow-2xl transition-all duration-300 transform hover:scale-155 hover:translate-x-29"
                 priority
               />
             </div>
