@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,6 +13,21 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const garet = localFont({
+  src: [
+    {
+      path: 'fonts/Garet-Book.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: 'fonts/Garet-Heavy.woff2',
+      weight: '700',
+      style: 'normal',
+    }
+  ],
+  variable: '--font-garet'
+})
 
 export const metadata: Metadata = {
   title: "EPSUMIN",
@@ -27,7 +43,7 @@ export default function RootLayout({
     <html lang="es">
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${garet.variable} ${geistMono.variable} font-garet antialiased`}
       >
         {children}
       </body>
