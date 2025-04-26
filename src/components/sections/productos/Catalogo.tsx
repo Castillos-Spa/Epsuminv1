@@ -179,7 +179,7 @@ export default function ElementosProteccion() {
             {/* Título de elementos de protección */}
             <div className="relative text-right pt-6 px-6">
               <h2 className="text-right text-xl font-bold text-blue-950 md:text-3xl">
-                Insumos para Elementos de Protección
+                Insumos para Elementos de Protección Personal
               </h2>
             </div>
 

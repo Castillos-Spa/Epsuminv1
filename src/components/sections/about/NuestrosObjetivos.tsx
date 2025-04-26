@@ -55,7 +55,7 @@ const NuestrosObjetivos = () => {
 
       <div className="bg-blue-950 text-white px-4 py-8 md:px-20 md:py-10 grid md:grid-cols-2 gap-8 mb-20">
         <div className="flex items-center justify-center">
-          <Image src="/mingcute.svg" alt="Misión" width={200} height={200} />
+          <Image src="/mingcute.svg" alt="Misión" width={200} height={200} className="brightness-0 invert"/>
         </div>
         <div>
           <h3 className="font-bold text-base md:text-3xl mb-2">MISION</h3>
@@ -76,7 +76,7 @@ const NuestrosObjetivos = () => {
           </p>
         </div>
         <div className="flex items-center justify-center">
-          <Image src="/mdi_idea.svg" alt="Visión" width={200} height={200} />
+          <Image src="/mdi_idea.svg" alt="Visión" width={200} height={200} className="brightness-0 invert" />
         </div>
       </div>
     </section>
