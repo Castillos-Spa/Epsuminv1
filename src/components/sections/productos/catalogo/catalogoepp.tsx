@@ -145,9 +145,9 @@ export default function ElementosProteccion() {
           <div className="relative mt-0 xl:mt-0 mb-4 bg-white rounded-xl shadow-md overflow-hidden z-10">
             {/* Títulos mejor organizados para pantallas grandes con altura reducida */}
             <div className="flex flex-col md:flex-row justify-between items-center py-3 px-4 xl:py-4 xl:px-5">
-              <h2 className="text-left text-4xl md:text-4xl xl:text-4xl font-bold text-blue-800 mb-1 md:mb-0">EPSUMIN</h2>
-              <h2 className="text-right text-lg md:text-lg xl:text-lg 2xl:text-xl font-bold text-blue-800">
-                Insumos para <span className="text-blue-800">Elementos de Protección</span>
+              <h2 className="text-left text-4xl md:text-4xl xl:text-4xl font-bold text-blue-950 mb-1 md:mb-0">EPSUMIN</h2>
+              <h2 className="text-right text-lg md:text-lg xl:text-lg 2xl:text-xl font-bold text-blue-950">
+                Insumos para Elementos de Protección Personal
               </h2>
             </div>
 
