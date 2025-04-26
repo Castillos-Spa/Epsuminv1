@@ -28,7 +28,7 @@ const NuestrosObjetivos = () => {
           </div>
           <div className="flex flex-col md:flex-row-reverse items-center gap-6">
             <Image
-              src="/gala.svg" 
+              src="/escudo.svg"
               alt="icono"
               width={100}
               height={100}
