@@ -109,12 +109,24 @@ const Hero = () => {
                 />
                 <div className="absolute bottom-0 left-0 right-0 h-80 bg-gradient-to-t from-white to-transparent z-[5]" />
                 <div className="absolute inset-0 bg-primary/20 flex items-start md:items-center xl:items-center justify-center pt-32 md:pt-5 xl:pt-0">
-                  {/* Contenido principal - mejor posicionado en XL */}
-                  <div className="container mx-auto px-4 md:px-12 xl:px-24 2xl:px-16 mt-0 mb-40">
-                    <div className="flex flex-col md:flex-row md:-mt-32 xl:flex-row xl:-mt-12 2xl:-mt-16 items-center max-w-6xl mx-auto relative">
-                      
+                  {/* Contenedor con padding/margin responsive */}
+                  <div className="container mx-auto 
+                  px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-32 
+                  mt-0 mb-40">
+                    {/* Row flex responsive con márgenes */}
+                    <div className="flex flex-col 
+                    sm:flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 
+                    items-center 
+                    max-w-6xl mx-auto 
+                    -mt-0 sm:-mt-16 md:-mt-32 lg:-mt-20 xl:-mt-12 2xl:-mt-16 
+                    relative">
                       {/* Panel izquierdo: contenido de texto */}
-                      <div className="w-3/4 md:w-3/5 md:pr-8 xl:w-2/3  pb-6 md:pb-0 xl:pb-0 z-10 mb-16 xl:mb-140 2xl:mb-58 ">
+                      <div className="w-full 
+                      sm:w-full md:w-3/5 lg:w-3/5 xl:w-2/3 2xl:w-2/3 
+                      pr-0 sm:pr-4 md:pr-8 lg:pr-10 xl:pr-8 2xl:pr-12 
+                      pb-6 sm:pb-8 md:pb-0 lg:pb-0 xl:pb-0 2xl:pb-0 
+                      z-10 
+                      mb-16 sm:mb-24 md:mb-32 lg:mb-40 xl:mb-56 2xl:mb-58">
                         <div className="bg-white/60 p-8 md:p-10 xl:p-8 rounded-2xl shadow-md">
                           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-blue-950">{slide.title}</h1>
                           <p className="text-lg md:text-xl mb-6 text-amber-600 font-bold bold">{slide.description}</p>
@@ -167,7 +179,9 @@ const Hero = () => {
         </div>
 
         {/* Indicadores del carrusel */}
-        <div className="absolute bottom-80 md:bottom-72 xl:bottom-72 2xl:bottom-80 left-0 right-0 flex justify-center gap-2 z-10">
+        <div className="absolute left-0 right-0 
+                  bottom-12 sm:bottom-16 md:bottom-20 lg:bottom-28 xl:bottom-32 2xl:bottom-40 
+                  flex justify-center gap-2 z-10">
           {slides.map((_, index) => (
             <button
               key={index}
