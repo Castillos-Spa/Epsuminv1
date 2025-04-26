@@ -44,8 +44,9 @@ export default function SeccionContacto() {
             </div>
           </div>
         </div>
-        <div className="relative z-10 bg-amber-600 px-19 py-8">
-          <div className="flex space-x-6">
+        <div className="relative z-10 bg-amber-600 px-4 md:px-19 py-10">
+          {/* Cambio de flex-row a flex-col en móvil, y flex-row en md (pantallas medianas y más grandes) */}
+          <div className="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0">
             <div className="flex items-center">
               <Mail className="mr-2 h-6 w-6 text-white" />
               <a href="mailto:contacto@epsumin.cl" className="text-white hover:underline text-lg">
