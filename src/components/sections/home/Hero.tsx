@@ -138,7 +138,7 @@ const Hero = () => {
                     max-w-6xl mx-auto 
                     -mt-0 sm:-mt-16 md:-mt-32 lg:-mt-20 xl:-mt-12 2xl:-mt-16 
                     relative">
-                      {/* Panel izquierdo: contenido de texto */}
+                      {/* Panel izquierdo contenido de texto */}
                       <div className="w-full 
                       sm:w-full md:w-3/5 lg:w-3/5 xl:w-2/3 2xl:w-2/3 
                       pr-0 sm:pr-4 md:pr-8 lg:pr-10 xl:pr-8 2xl:pr-12 
