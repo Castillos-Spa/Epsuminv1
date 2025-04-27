@@ -29,6 +29,22 @@ const geistMono = Geist_Mono({
 //   variable: '--font-garet'
 // })
 
+// const beltica = localFont({
+//   src: [
+//     {
+//       path: 'fonts/Baltica-Regular.woff2',
+//       weight: '400',
+//       style: 'normal',
+//     },
+//     {
+//       path: 'fonts/Baltica-Bold.ttf',
+//       weight: '700',
+//       style: 'normal',
+//     }
+//   ],
+//   variable: '--font-baltica'
+// });
+
 export const metadata: Metadata = {
   title: "EPSUMIN",
   description: "by Castillos SPA",
