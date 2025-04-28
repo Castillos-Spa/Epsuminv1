@@ -11,15 +11,15 @@ import Link from 'next/link';
 const slides = [
   {
     id: 1,
-    image: '/img/fondo4.jpg',
-    title: 'Equipos y Suministros Industriales',
-    description: 'Soluciones integrales para su empresa',
-    buttonText: 'Cotizar Ahora',
+    image: '/img/Insumos de Faenas.png',
+    title: 'Insumos de Faenas, Arriendo de Equipos y Maquinaria',
+    description: 'Un soporte para tus instalaciones y trabajos en faena',
+    buttonText: 'Ver Productos',
     buttonUrl: '/productos'
   },
   {
     id: 2,
-    image: '/img/fondo.jpg',
+    image: '/img/Calidad Garantizada.png',
     imagen2: '/img/torreta.png',
     title: 'Seguridad y Calidad Garantizada',
     description: 'Trabajamos con las mejores marcas del mercado',
@@ -28,28 +28,10 @@ const slides = [
   },
   {
     id: 3,
-    image: '/img/fondo1.jpg',
+    image: '/img/Atención Personalizada.png',
     imagen2: '/img/maquina.png',
     title: 'Atención Personalizada',
     description: 'Expertos a su servicio en todo momento',
-    buttonText: 'Contáctanos',
-    buttonUrl: '/contacto'
-  },
-  {
-    id: 4,
-    image: '/img/4.jpg',
-    imagen2: '/img/maquina.png',
-    title: '.........',
-    description: '...............',
-    buttonText: 'Contáctanos',
-    buttonUrl: '/contacto'
-  },
-  {
-    id: 5,
-    image: '/img/5.jpg',
-    imagen2: '/img/maquina.png',
-    title: '.........',
-    description: '...............',
     buttonText: 'Contáctanos',
     buttonUrl: '/contacto'
   },

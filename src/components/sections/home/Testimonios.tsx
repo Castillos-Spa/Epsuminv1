@@ -8,7 +8,7 @@ const testimonios = [
     empresa: 'Constructora San José',
     comentario: 'Estoy satisfecho con los elementos de protección personal que compré, son resistentes y de buena calidad, me brindan la seguridad que necesito para mis trabajadores.',
     estrellas: 5,
-    avatar: '/img/avatar.png'
+    avatar: '/img/Cristian Contreras.jpeg'
   },
   {
     id: 2,
@@ -16,15 +16,15 @@ const testimonios = [
     empresa: 'Industrias del Valle',
     comentario: 'Me sorprendió gratamente la atención personalizada y la flexibilidad en pagos, una verdadera alianza con mis necesidades, excelente servicio y total recomendación.',
     estrellas: 5,
-    avatar: '/img/avatar.png'
+    avatar: '/img/Alejandro Rojas.jpeg'
   },
   {
     id: 3,
     nombre: 'Nicole Sarmiento',
     empresa: 'Minera Los Andes',
     comentario: 'Los equipos arrendados son excelentes, su rendimiento y durabilidad nos permiten trabajar con eficiencia y seguridad en nuestra faena.',
-    estrellas: 4,
-    avatar: '/img/avatar.png'
+    estrellas: 5,
+    avatar: '/img/Alejandra Castillo.jpeg'
   },
 ];
 
