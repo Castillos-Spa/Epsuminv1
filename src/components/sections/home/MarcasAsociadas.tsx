@@ -35,10 +35,11 @@ const MarcasAsociadas = () => {
             </div>
           ))}
         </div> */}
-        <div className="absolute inset-0">
-          <div className="w-full h-full bg-center bg-cover bg-fixed" style={{ backgroundImage: `url('/img/fondo-licitaciones.png')` }}></div>
+        <div className="absolute inset-0 z-0">
+          {/* Fondo de la sección */}
+          <div className="w-full h-full bg-center bg-cover bg-fixed" style={{ backgroundImage: `url('/img/fondo licitaciones.png')` }}></div>
         </div>
-        <div className="mb-20 text-center">
+        <div className="mb-20 text-center relative z-10">
           <h2 className="text-6xl font-bold text-blue-950 mb-2 uppercase">Licitaciones</h2>
           <h3 className="text-4xl font-semibold text-amber-600 mb-2 tracking-wider">PRÓXIMAMENTE</h3>
 
