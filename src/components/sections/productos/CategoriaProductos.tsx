@@ -4,10 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const categorias = [
-  { id: 1, nombre: 'Protección Personal', imagen: '/img/epp.jpg' },
-  { id: 2, nombre: 'Instalaciones de Faena', imagen: '/img/carpas-para-la-mineria.jpg' },
-  { id: 3, nombre: 'Equipos', imagen: '/img/generadores_electricos.jpg' },
-  { id: 4, nombre: 'Maquinaria', imagen: '/img/komatsu.jpg' },
+  { id: 1, nombre: 'Vestimenta Industrial', imagen: '/img/Vestimenta Industrial.png' },
+  { id: 2, nombre: 'Insumos de Faena​', imagen: '/img/Pagina Web.png' },
+  { id: 3, nombre: 'Arriendo de Equipos', imagen: '/img/Equipos.webp' },
+  { id: 4, nombre: 'Arriendo de Maquinaria', imagen: '/img/Maquinarias.jpg' },
 ];
 
 const CategoriaProductos = () => {

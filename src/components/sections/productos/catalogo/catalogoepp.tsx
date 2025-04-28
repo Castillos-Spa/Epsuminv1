@@ -9,33 +9,43 @@ export default function ElementosProteccion() {
   const elementosProteccion = [
     {
       id: 1,
-      nombre: "Geologo Minero",
-      imagen: "/img/geologo-minero.png",
+      nombre: "Parka Le Mans Oxford",
+      imagen: "/img/Parka_Le_Mans_Oxford_300D_Fluor_Front.webp",
     },
     {
       id: 2,
-      nombre: "Botas de Trabajo",
-      imagen: "/img/botas.png",
+      nombre: "Lente semioscuro",
+      imagen: "/img/Lente semioscuro SteelPro.avif",
     },
     {
       id: 3,
-      nombre: "Zapatos de Seguridad",
-      imagen: "/img/botin.png",
+      nombre: "Buzo Tyvek Blanco",
+      imagen: "/img/Buzo-Tyvek-Blanco.jpg",
     },
     {
       id: 4,
-      nombre: "Pantalón de Trabajo",
-      imagen: "/img/Pantalon.png",
+      nombre: "Guante Cabritilla Legend",
+      imagen: "/img/Guante_Cabritilla_Legend.webp",
     },
     {
       id: 5,
-      nombre: "Casco de Seguridad",
-      imagen: "/img/casco.png",
+      nombre: "Geologo minero Supervisor",
+      imagen: "/img/Geologo-minero-Supervisor.jpg",
     },
     {
       id: 6,
-      nombre: "Guantes de Trabajo",
-      imagen: "/img/guantes.png",
+      nombre: "Botin Climber Verbier",
+      imagen: "/img/BOTIN-CLIMBER-VERBIER.png",
+    },
+    {
+      id: 7,
+      nombre: "Botin New Platino Bunker",
+      imagen: "/img/BOTIN-NEW-PLATINO-BUNKER.png",
+    },
+    {
+      id: 8,
+      nombre: "Blusa Oxford",
+      imagen: "/img/Blusa Oxford.webp",
     },
   ]
 
