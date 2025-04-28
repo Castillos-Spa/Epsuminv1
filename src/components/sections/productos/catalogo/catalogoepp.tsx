@@ -52,66 +52,54 @@ export default function ElementosProteccion() {
                 <div className="text-lg">
                   <div className="mb-1 flex items-center">
                     <span className="mr-2">•</span>
-                    <span>Estructuras (metálicas y acrílicas)</span>
+                    <span>Vestimenta Industrial</span>
                   </div>
                   <div className="mb-0.5 flex items-center">
                     <span className="mr-1">•</span>
-                    <span>Carpas de Emergencia</span>
+                    <span>Ropa Ignifuga</span>
                   </div>
                   <div className="mb-0.5 flex items-center">
                     <span className="mr-1">•</span>
-                    <span>Elementos de equipamiento, sillas y mesas</span>
+                    <span>Elementos de Protección Personal</span>
                   </div>
                   <div className="mb-0.5 flex items-center">
                     <span className="mr-1">•</span>
-                    <span>Toldos</span>
+                    <span>Toldos para Sombra en Faena</span>
                   </div>
                   <div className="mb-0.5 flex items-center">
                     <span className="mr-1">•</span>
-                    <span>Implementos de trabajo</span>
+                    <span>Insumos para faenas</span>
                   </div>
                   <div className="mb-0.5 flex items-center">
                     <span className="mr-1">•</span>
-                    <span>Mallas y cerchas de terreno</span>
-                  </div>
-                  <div className="mb-0.5 flex items-center">
-                    <span className="mr-1">•</span>
-                    <span>Estructuras Modulares para faenas</span>
+                    <span>Elementos de segregación</span>
                   </div>
                 </div>
 
                 <div className="text-lg">
+                  <div className="mb-0.5 flex items-center">
+                    <span className="mr-1">•</span>
+                    <span>Estructuras funcionales para faenas</span>
+                  </div>
                   <div className="mb-1 flex items-center">
                     <span className="mr-2">•</span>
-                    <span>Visítanos para conocer:</span>
+                    <span>Equipos de Extinción de Incendio</span>
                   </div>
                   <div className="mb-0.5 flex items-center">
                     <span className="mr-1">•</span>
-                    <span>Kit de Iluminación</span>
+                    <span>Arriendo Placas Compactadoras</span>
                   </div>
                   <div className="mb-0.5 flex items-center">
                     <span className="mr-1">•</span>
-                    <span>Kit de Emergencia y Rescate</span>
+                    <span>Arriendo Equipos de Iluminación</span>
                   </div>
                   <div className="mb-0.5 flex items-center">
                     <span className="mr-1">•</span>
-                    <span>Kit de Educación Ambiental</span>
+                    <span>Arriendo Generadores de Energía</span>
                   </div>
                   <div className="mb-0.5 flex items-center">
                     <span className="mr-1">•</span>
-                    <span>Kit de Seguridad Vial</span>
-                  </div>
-                  <div className="mb-0.5 flex items-center">
-                    <span className="mr-1">•</span>
-                    <span>Señaléticas</span>
-                  </div>
-                  <div className="mb-0.5 flex items-center">
-                    <span className="mr-1">•</span>
-                    <span>Contenedores para basura segregada</span>
-                  </div>
-                  <div className="mb-0.5 flex items-center">
-                    <span className="mr-1">•</span>
-                    <span>Programa de Reciclaje</span>
+                    <span>Maquinas de movimiento de Tierra</span>
                   </div>
                 </div>
               </div>
@@ -146,8 +134,8 @@ export default function ElementosProteccion() {
             {/* Títulos mejor organizados para pantallas grandes con altura reducida */}
             <div className="flex flex-col md:flex-row justify-between items-center py-3 px-4 xl:py-4 xl:px-5">
               <h2 className="text-left text-4xl md:text-4xl xl:text-4xl font-bold text-blue-950 mb-1 md:mb-0">EPSUMIN</h2>
-              <h2 className="text-right text-lg md:text-lg xl:text-lg 2xl:text-xl font-bold text-blue-950">
-                Insumos para Elementos de Protección Personal
+              <h2 className="text-right text-xl md:text-lg xl:text-xl 2xl:text-2xl font-bold text-blue-950">
+                Vestimenta Industrial y EPP
               </h2>
             </div>
 

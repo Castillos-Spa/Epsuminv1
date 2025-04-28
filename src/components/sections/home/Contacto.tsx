@@ -52,8 +52,8 @@ const Contacto = () => {
               
               <div>
                 <h3 className="text-xl font-semibold mb-4">Horario de Atención</h3>
-                <p>Lunes a Viernes: 8:30 AM - 6:00 PM</p>
-                <p>Sábado: 9:00 AM - 1:00 PM</p>
+                <p>Lunes a Viernes: 8:30 a 18:00</p>
+                <p>Sábado: 8:00 a 13:00</p>
               </div>
             </div>
             

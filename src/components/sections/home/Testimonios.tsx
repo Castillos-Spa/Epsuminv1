@@ -4,25 +4,25 @@ import Image from 'next/image';
 const testimonios = [
   {
     id: 1,
-    nombre: 'Carlos Mendoza',
+    nombre: 'Cristian Contreras',
     empresa: 'Constructora San José',
-    comentario: 'Excelente servicio y productos de alta calidad. Han sido nuestros proveedores durante 5 años y siempre cumplen con los plazos de entrega.',
+    comentario: 'Estoy satisfecho con los elementos de protección personal que compré, son resistentes y de buena calidad, me brindan la seguridad que necesito para mis trabajadores.',
     estrellas: 5,
     avatar: '/img/avatar.png'
   },
   {
     id: 2,
-    nombre: 'María Pérez',
+    nombre: 'Alejandro Rojas',
     empresa: 'Industrias del Valle',
-    comentario: 'Los servicios de mantenimiento que ofrecen son excepcionales. El personal técnico es muy profesional y conocedor.',
+    comentario: 'Me sorprendió gratamente la atención personalizada y la flexibilidad en pagos, una verdadera alianza con mis necesidades, excelente servicio y total recomendación.',
     estrellas: 5,
     avatar: '/img/avatar.png'
   },
   {
     id: 3,
-    nombre: 'Roberto Sánchez',
+    nombre: 'Nicole Sarmiento',
     empresa: 'Minera Los Andes',
-    comentario: 'Todos los equipos de seguridad que hemos adquirido son de primera categoría. Recomiendo ampliamente sus servicios.',
+    comentario: 'Los equipos arrendados son excelentes, su rendimiento y durabilidad nos permiten trabajar con eficiencia y seguridad en nuestra faena.',
     estrellas: 4,
     avatar: '/img/avatar.png'
   },

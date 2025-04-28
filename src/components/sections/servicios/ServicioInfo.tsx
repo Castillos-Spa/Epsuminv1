@@ -13,12 +13,10 @@ export default function SeccionContacto() {
             {/* Columna izquierda - Texto */}
             <div className="pr-4 md:pr-8 flex flex-col justify-center items-start">
               <h2 className="mb-4 text-5xl font-bold uppercase text-blue-950">
-                Necesita
-                <br />
-                nuestros servicios?
+                Contáctese con Nosotros
               </h2>
               <p className=" text-3xl text-amber-600">
-                Contáctanos para obtener una cotización personalizada o más información sobre nuestros servicios
+                ¡¡ Estamos aquí para responder a tus preguntas y atender tus necesidades !!
               </p>
               <div className="mt-6">
                 <Link
