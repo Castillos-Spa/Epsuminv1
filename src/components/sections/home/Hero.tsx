@@ -30,10 +30,10 @@ const slides = [
     id: 3,
     image: '/img/Atención Personalizada.png',
     imagen2: '/img/maquina.png',
-    title: 'Atención Personalizada',
-    description: 'Expertos a su servicio en todo momento',
-    buttonText: 'Contáctanos',
-    buttonUrl: '/contacto'
+    title: 'Personaliza tu ropa de trabajo',
+    description: 'Conoce nuestras alternativas',
+    buttonText: 'Ver Productos',
+    buttonUrl: '/productos'
   },
 ];
 

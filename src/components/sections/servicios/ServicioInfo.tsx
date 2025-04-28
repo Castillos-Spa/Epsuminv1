@@ -60,9 +60,10 @@ export default function SeccionContacto() {
             </div>
           </div>
         </div>
-        <div className="flex bg-blue-950 px-19 py-4 h-16">
-          
-          
+        <div className="flex items-center bg-blue-950 px-19 py-4 h-16">
+          <p className="text-white text-lg">
+            Horario de Atención: Lunes a Viernes 08:00 a 18:00 y Sábados 08:00 a 13:00​
+          </p>
         </div>
       </div>
     </section>

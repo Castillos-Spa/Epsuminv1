@@ -198,7 +198,7 @@ const Noticias = () => {
             
             {/* Cuerpo del modal con scroll */}
             <div className="p-6 overflow-y-auto flex-grow">
-              <h3 className="text-2xl font-bold text-blue-950 mb-4">{selectedNoticia.titulo}</h3>
+              <h3 className="text-2xl font-bold text-amber-600 mb-4">{selectedNoticia.titulo}</h3>
               
               {selectedNoticia.imagenId && (
                 <div className="relative h-64 mb-6">
