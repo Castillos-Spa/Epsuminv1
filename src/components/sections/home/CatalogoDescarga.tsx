@@ -18,7 +18,7 @@ export default function CatalogoProductos() {
                 width={600}
                 height={900}
                 alt="Catálogo de productos en tablet"
-                className="h-auto w-full object-contain drop-shadow-2xl md:transition-all md:duration-300 md:transform md:hover:scale-155 md:hover:translate-x-29"
+                className="h-auto w-full object-contain drop-shadow-2xl md:transition-all md:duration-300 md:transform md:hover:scale-135 md:hover:translate-x-29"
                 priority
               />
             </div>

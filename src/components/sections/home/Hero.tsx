@@ -15,7 +15,7 @@ const slides = [
     title: 'Insumos de Faenas, Arriendo de Equipos y Maquinaria',
     description: 'Un soporte para tus instalaciones y trabajos en faena',
     buttonText: 'Ver Productos',
-    buttonUrl: '/productos'
+    buttonUrl: '#productos'
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const slides = [
     title: 'Seguridad y Calidad Garantizada',
     description: 'Trabajamos con las mejores marcas del mercado',
     buttonText: 'Ver Productos',
-    buttonUrl: '/productos'
+    buttonUrl: '#productos'
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const slides = [
     title: 'Personaliza tu ropa de trabajo',
     description: 'Conoce nuestras alternativas',
     buttonText: 'Ver Productos',
-    buttonUrl: '/productos'
+    buttonUrl: '#productos'
   },
 ];
 
