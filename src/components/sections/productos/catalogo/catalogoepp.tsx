@@ -157,17 +157,20 @@ export default function ElementosProteccion() {
               >
                 {elementosProteccion.map((insumo) => (
                   <div key={insumo.id} className="p-1.5 xl:p-1.5">
-                    <div className="overflow-hidden rounded-lg bg-white p-1.5 xl:p-2 border-orange-400 border-2 hover:shadow-lg transition-all">
-                      <Image
-                        src={insumo.imagen || "/placeholder.svg"}
-                        width={180}
-                        height={180}
-                        alt={insumo.nombre}
-                        className="h-auto w-full object-cover"
-                        loading="lazy"
-                        quality={85}
-                      />
-                      <p className="mt-1 text-center font-medium text-gray-800 text-sm xl:text-sm">
+                    <div className="overflow-hidden rounded-lg bg-white p-1.5 xl:p-2 border-orange-400 border-2 hover:shadow-lg transition-all h-full flex flex-col">
+                      {/* Contenedor de imagen con altura y ancho fijo */}
+                      <div className="w-full h-48 flex items-center justify-center overflow-hidden">
+                        <Image
+                          src={insumo.imagen || "/placeholder.svg"}
+                          width={180}
+                          height={180}
+                          alt={insumo.nombre}
+                          className="object-contain max-h-full max-w-full"
+                          loading="lazy"
+                          quality={100}
+                        />
+                      </div>
+                      <p className="mt-1 text-center font-medium text-gray-800 text-sm xl:text-sm py-2">
                         {insumo.nombre}
                       </p>
                     </div>
