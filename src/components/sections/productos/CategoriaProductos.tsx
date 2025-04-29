@@ -19,7 +19,7 @@ const CategoriaProductos = () => {
       {/* Grid con mejor espaciado responsivo */}
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-1 xl:gap-2 mx-1 md:mx-5 xl:mx-7 ">
         {categorias.map((categoria) => (
-          <Link href={`/categoria/${categoria.id}`} key={categoria.id} className="group">
+          <Link href="#productos" key={categoria.id} className="group">
             <div className="flex flex-col items-center p-1 sm:p-2">
               {/* Tamaño de imagen adaptativo */}
               <div className="rounded-full overflow-hidden w-16 h-16 md:w-20 md:h-20 xl:w-39 xl:h-39
