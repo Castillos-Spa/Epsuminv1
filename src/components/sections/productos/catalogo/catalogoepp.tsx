@@ -44,8 +44,8 @@ export default function ElementosProteccion() {
     },
     {
       id: 8,
-      nombre: "Blusa Oxford",
-      imagen: "/img/Blusa Oxford.webp",
+      nombre: "Protección Respiratoria",
+      imagen: "/img/Protección Respiratoria.png",
     },
   ]
 
