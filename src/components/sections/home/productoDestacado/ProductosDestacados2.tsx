@@ -163,9 +163,9 @@ const ProductosDestacados = () => {
                 </div>
                 <div className="md:ml-6 flex-1">
                   <p className="text-lg font-medium text-blue-950 mb-2">{selectedProduct.nombre}</p>
-                  <p className="text-amber-600 font-semibold text-xl">
+                  {/* <p className="text-amber-600 font-semibold text-xl">
                     ${selectedProduct.precio.toLocaleString()}
-                  </p>
+                  </p> */}
                 </div>
               </div>
               
