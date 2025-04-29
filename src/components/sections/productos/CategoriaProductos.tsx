@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const categorias = [
   { id: 1, nombre: 'Vestimenta Industrial', imagen: '/img/Vestimenta Industrial.png' },
-  { id: 2, nombre: 'Insumos de Faena​', imagen: '/img/Pagina WEB.png' },
+  { id: 2, nombre: 'Insumos de Faena​', imagen: '/img/Carpa.png' },
   { id: 3, nombre: 'Arriendo de Equipos', imagen: '/img/Equipos.webp' },
   { id: 4, nombre: 'Arriendo de Maquinaria', imagen: '/img/Maquinarias.jpg' },
 ];

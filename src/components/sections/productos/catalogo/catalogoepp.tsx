@@ -61,7 +61,7 @@ export default function ElementosProteccion() {
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 <div className="text-lg">
                   <div className="mb-1 flex items-center">
-                    <span className="mr-2">•</span>
+                    <span className="mr-1">•</span>
                     <span>Vestimenta Industrial</span>
                   </div>
                   <div className="mb-0.5 flex items-center">
@@ -92,7 +92,7 @@ export default function ElementosProteccion() {
                     <span>Estructuras funcionales para faenas</span>
                   </div>
                   <div className="mb-1 flex items-center">
-                    <span className="mr-2">•</span>
+                    <span className="mr-1">•</span>
                     <span>Equipos de Extinción de Incendio</span>
                   </div>
                   <div className="mb-0.5 flex items-center">

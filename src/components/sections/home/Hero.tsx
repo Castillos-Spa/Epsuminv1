@@ -21,8 +21,8 @@ const slides = [
     id: 2,
     image: '/img/Calidad Garantizada.png',
     imagen2: '/img/torreta.png',
-    title: 'Seguridad y Calidad Garantizada',
-    description: 'Trabajamos con las mejores marcas del mercado',
+    title: 'Iluminacion Sostenible',
+    description: 'Energía renovable en faena',
     buttonText: 'Ver Productos',
     buttonUrl: '#productos'
   },
@@ -32,6 +32,22 @@ const slides = [
     imagen2: '/img/maquina.png',
     title: 'Personaliza tu ropa de trabajo',
     description: 'Conoce nuestras alternativas',
+    buttonText: 'Ver Productos',
+    buttonUrl: '#productos'
+  },
+  {
+    id: 4,
+    image: '/img/1.jpg',
+    title: 'Energia Para Tus Proyectos',
+    description: 'Siente la confiabilidad de nuestros equipos',
+    buttonText: 'Ver Productos',
+    buttonUrl: '#productos'
+  },
+  {
+    id: 5,
+    image: '/img/5.jpg',
+    title: 'Compacta Con Confianza',
+    description: 'Soluciones de compactación',
     buttonText: 'Ver Productos',
     buttonUrl: '#productos'
   },
