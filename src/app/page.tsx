@@ -51,17 +51,16 @@ export default function Home() {
       
       <ProductosDestacados/> {/* seccion de productos destacados  */}
       
-      <LazyLoad>
-        <CatalogoDescarga/> {/* seccion de catalogo de productos y servicios */}
-      </LazyLoad>
+      <CatalogoDescarga/> {/* seccion de catalogo de productos y servicios */}
+      
       
       <LazyLoad>
         <DynamicCatalogo/> {/* seccion de catalogo de productos y servicios */}
       </LazyLoad>
       
-      <LazyLoad>
-        <ServicioInfo/> {/* Seccion de necesita nuestros servicios */}
-      </LazyLoad>
+      
+      <ServicioInfo/> {/* Seccion de necesita nuestros servicios */}
+    
       
       <LazyLoad>
         <DynamicTestimonios/> {/* seccion de google comentarios */}
@@ -75,9 +74,9 @@ export default function Home() {
         <MarcasAsociadas/> {/* Licitaciones proximamente */}
       </LazyLoad>
       
-      <LazyLoad>
-        <AcercaDeNosotros/> {/* Seccion de acerca de nosotros */}
-      </LazyLoad>
+      
+      <AcercaDeNosotros/> {/* Seccion de acerca de nosotros */}
+      
       
       <LazyLoad>
         <NuestrosObjetivos/> {/* Seccion de nuestros objetivos */}
@@ -87,9 +86,9 @@ export default function Home() {
         <NuestrosValores/> {/* Seccion de nuestros valores */}
       </LazyLoad>
       
-      <LazyLoad>
-        <Contacto/> {/* form para cotizaciones */}
-      </LazyLoad>
+      
+      <Contacto/> {/* form para cotizaciones */}
+      
       
       <Footer/>
     </main>
