@@ -54,9 +54,9 @@ export default function Home() {
       <CatalogoDescarga/> {/* seccion de catalogo de productos y servicios */}
       
       
-      
-      <DynamicCatalogo/> {/* seccion de catalogo de productos y servicios */}
-      
+      <LazyLoad>
+        <DynamicCatalogo/> {/* seccion de catalogo de productos y servicios */}
+      </LazyLoad>
       
       
       <ServicioInfo/> {/* Seccion de necesita nuestros servicios */}
