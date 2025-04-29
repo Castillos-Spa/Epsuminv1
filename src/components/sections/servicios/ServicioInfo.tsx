@@ -12,7 +12,7 @@ export default function SeccionContacto() {
           <div className="grid md:grid-cols-2 py-10">
             {/* Columna izquierda - Texto */}
             <div className="pr-4 md:pr-8 flex flex-col justify-center items-start">
-              <h2 className="mb-4 text-5xl font-bold uppercase text-blue-950">
+              <h2 className="mb-4 text-3xl md:text-5xl font-bold uppercase text-blue-950">
                 Contáctese con Nosotros
               </h2>
               <p className=" text-3xl text-amber-600">
@@ -61,7 +61,7 @@ export default function SeccionContacto() {
           </div>
         </div>
         <div className="flex items-center bg-blue-950 px-19 py-4 h-16">
-          <p className="text-white text-lg">
+          <p className="text-white text-sm md:text-lg">
             Horario de Atención: Lunes a Viernes 08:00 a 18:00 y Sábados 08:00 a 13:00​
           </p>
         </div>
