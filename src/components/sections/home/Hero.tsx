@@ -12,7 +12,7 @@ const slides = [
   {
     id: 1,
     image: '/img/Insumos de Faenas.png',
-    title: 'Insumos de Faenas, Arriendo de Equipos y Maquinaria',
+    title: 'Insumos de Faenas y Arriendo de Equipos',
     description: 'Un soporte para tus instalaciones y trabajos en faena',
     buttonText: 'Ver Productos',
     buttonUrl: '#productos'
