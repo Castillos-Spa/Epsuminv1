@@ -90,28 +90,17 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Newsletter */}
-          <div>
-            <h3 className="text-xl font-bold">Suscríbete a Nuestro Boletín</h3>
-            <p className="mb-4">Recibe las últimas noticias y ofertas directamente en tu correo electrónico.</p>
-            <form className="mb-4">
-              <div className="flex">
-                <input 
-                  type="email" 
-                  placeholder="Tu email" 
-                  className="w-full px-4 py-2 border-gray-300 rounded border-1 text-white focus:outline-none focus:border-blue-500"
-                />
-                <button 
-                  type="submit"
-                  className="bg-amber-600 px-4 py-2 rounded hover:bg-blue-900 transition-colors"
-                >
-                  Enviar
-                </button>
-              </div>
-            </form>
-            <p className="text-sm text-gray-400">
-              Nos comprometemos a mantener tu información segura. Jamás compartiremos tus datos.
-            </p>
+          {/* Newsletter breve */}
+          <div className="mb-4">
+            <h3 className="text-lg font-semibold">Suscríbete a Nuestro Boletín</h3>
+            <a
+              href="https://forms.gle/47UAZou7oQHSiBmZ9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-amber-600 px-4 py-2 mt-2 rounded text-white hover:bg-blue-900 transition-colors"
+            >
+              Ir al formulario
+            </a>
           </div>
         </div>
         
