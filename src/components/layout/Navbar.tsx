@@ -60,7 +60,7 @@ const Navbar = () => {
               <FaInstagram size={22} />
             </a>
             <a 
-              href="https://wa.me/56912345678" 
+              href="https://www.linkedin.com/epsumin"
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-amber-600 hover:text-blue-950 transition-colors"
