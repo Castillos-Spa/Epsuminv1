@@ -54,8 +54,8 @@ export default function SeccionContacto() {
 
             <div className="flex items-center">
               <Phone className="mr-2 h-6 w-6 text-white" />
-              <a href="tel:+56961483893" className="text-white hover:underline text-lg">
-                +56 9 6148 3893
+              <a href="tel:+56961463898" className="text-white hover:underline text-lg">
+              +56 9 6146 3898
               </a>
             </div>
           </div>
