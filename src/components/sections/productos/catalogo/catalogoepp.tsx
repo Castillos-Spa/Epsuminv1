@@ -15,7 +15,7 @@ export default function ElementosProteccion() {
     {
       id: 2,
       nombre: "Lente semioscuro",
-      imagen: "/img/Lente semioscuro SteelPro.avif",
+      imagen: "/img/Lente semioscuro SteelPro.png",
     },
     {
       id: 3,

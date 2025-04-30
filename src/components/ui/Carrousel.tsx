@@ -20,7 +20,7 @@ export function SimpleCarousel({
   className = "",
   itemsToShow = { mobile: 1, tablet: 2, desktop: 4 },
   autoPlay = true,
-  interval = 3000
+  interval = 5000
 }: SimpleCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [itemWidth, setItemWidth] = useState(0)
