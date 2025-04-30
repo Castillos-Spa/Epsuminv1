@@ -125,7 +125,7 @@ export default function ElementosProteccion() {
             </div>
 
             {/* Imagen de trabajador - reposicionada para altura reducida */}
-            <div className="md:w-1/3 xl:w-1/4 2xl:w-1/5 ml-auto relative">
+            <div className="md:w-1/3 xl:w-1/4 2xl:w-1/5 ml-auto relative ">
               <div className="md:absolute md:bottom-[-160px] md:-right-4 xl:bottom-[-170px] 2xl:bottom-[-190px] xl:-right-6 2xl:-right-10">
                 <Image
                   src="/img/vista-lateral-ingeniero-hombre-sonriente-casco.png"
@@ -140,7 +140,7 @@ export default function ElementosProteccion() {
           </div>
 
           {/* Sección de título y carrusel con fondo blanco compartido - altura reducida */}
-          <div className="relative mt-0 xl:mt-0 mb-4 bg-white rounded-xl shadow-md overflow-hidden z-10">
+          <div className="relative mt-0 md:top-5 xl:mt-0 mb-4 bg-white rounded-xl shadow-md overflow-hidden z-10">
             {/* Títulos mejor organizados para pantallas grandes con altura reducida */}
             <div className="flex flex-col md:flex-row justify-between items-center py-3 px-4 xl:py-4 xl:px-5">
               <h2 className="text-left text-4xl md:text-4xl xl:text-4xl font-bold text-blue-950 mb-1 md:mb-0">EPSUMIN</h2>
