@@ -31,7 +31,7 @@ export default function SeccionContacto() {
                 </Link>
               </div>
             </div>
-            <div className="relative z-20 translate-y-25 xl:translate-y-50 md:translate-y-55 md:translate-x-25 xl:-translate-x-35 flex justify-center items-center animate-slide-in-right" >
+            <div className="relative z-20 translate-y-24 xl:translate-y-54 md:translate-y-61 md:translate-x-25 xl:-translate-x-35 flex justify-center items-center animate-slide-in-right" >
               <Image
                 src="/img/asistente.png"
                 alt="Persona con laptop"
@@ -62,7 +62,7 @@ export default function SeccionContacto() {
         </div>
         <div className="flex items-center bg-blue-950 px-19 py-4 h-16">
           <p className="text-white text-sm md:text-lg">
-            Horario de Atención: Lunes a Viernes 08:00 a 18:00 y Sábados 08:00 a 13:00​
+            Lunes a Viernes 08:00 a 18:00 - Sábados 08:00 a 13:00​
           </p>
         </div>
       </div>
