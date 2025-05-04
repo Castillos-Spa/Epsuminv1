@@ -21,7 +21,7 @@ const slides = [
     id: 2,
     image: '/img/Calidad Garantizada.png',
     imagen2: '/img/torreta.png',
-    title: 'Iluminacion Sostenible',
+    title: 'Iluminación Sostenible',
     description: 'Energía renovable en faena',
     buttonText: 'Ver Productos',
     buttonUrl: '#productos'

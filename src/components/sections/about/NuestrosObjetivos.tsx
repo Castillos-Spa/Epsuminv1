@@ -58,7 +58,7 @@ const NuestrosObjetivos = () => {
           <Image src="/mingcute.svg" alt="Misión" width={200} height={200} className="brightness-0 invert"/>
         </div>
         <div>
-          <h3 className="font-bold text-base md:text-3xl mb-2">MISION</h3>
+          <h3 className="font-bold text-base md:text-3xl mb-2">MISIÓN</h3>
           <p className="text-sm md:text-base md:text-xl">
             Proveer servicios y arriendo de maquinarias de calidad para la industria minera,
             con soluciones innovadoras, seguras y sustentables, contribuyendo al desarrollo local
