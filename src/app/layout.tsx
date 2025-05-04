@@ -47,7 +47,7 @@ const beltica = localFont({
 
 export const metadata: Metadata = {
   title: "EPSUMIN",
-  description: "by Castillos SPA",
+  description: "by Castillos SpA",
   icons: {
     icon: "/logo.ico",
   },
