@@ -28,7 +28,7 @@ const slides = [
   },
   {
     id: 3,
-    image: '/img/Atención Personalizada.png',
+    image: '/img/AtenciónPersonalizada.png',
     title: 'Personaliza tu ropa de trabajo',
     description: 'Conoce nuestras alternativas',
     buttonText: 'Ver Productos',
