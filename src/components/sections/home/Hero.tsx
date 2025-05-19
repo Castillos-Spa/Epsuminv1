@@ -11,30 +11,46 @@ import Link from 'next/link';
 const slides = [
   {
     id: 1,
-    image: '/img/fondo5.jpg',
-    title: 'Equipos y Suministros Industriales',
-    description: 'Soluciones integrales para su empresa',
-    buttonText: 'Cotizar Ahora',
-    buttonUrl: '/productos'
+    image: '/img/Insumos de Faenas.png',
+    title: 'Insumos de Faenas y Arriendo de Equipos',
+    description: 'Un soporte para tus instalaciones y trabajos en faena',
+    buttonText: 'Ver Productos',
+    buttonUrl: '#productos'
   },
   {
     id: 2,
-    image: '/img/fondo8.jpg',
+    image: '/img/Calidad Garantizada.png',
     imagen2: '/img/torreta.png',
-    title: 'Seguridad y Calidad Garantizada',
-    description: 'Trabajamos con las mejores marcas del mercado',
+    title: 'Iluminación Sostenible',
+    description: 'Energía renovable en faena',
     buttonText: 'Ver Productos',
-    buttonUrl: '/productos'
+    buttonUrl: '#productos'
   },
   {
     id: 3,
-    image: '/img/fondo6.jpg',
+    image: '/img/Atención Personalizada.png',
     imagen2: '/img/maquina.png',
-    title: 'Atención Personalizada',
-    description: 'Expertos a su servicio en todo momento',
-    buttonText: 'Contáctanos',
-    buttonUrl: '/contacto'
-  }
+    title: 'Personaliza tu ropa de trabajo',
+    description: 'Conoce nuestras alternativas',
+    buttonText: 'Ver Productos',
+    buttonUrl: '#productos'
+  },
+  {
+    id: 4,
+    image: '/img/1.jpg',
+    title: 'Energia Para Tus Proyectos',
+    description: 'Siente la confiabilidad de nuestros equipos',
+    buttonText: 'Ver Productos',
+    buttonUrl: '#productos'
+  },
+  {
+    id: 5,
+    image: '/img/5.jpg',
+    title: 'Compacta Con Confianza',
+    description: 'Soluciones de compactación',
+    buttonText: 'Ver Productos',
+    buttonUrl: '#productos'
+  },
 ];
 
 const Hero = () => {
@@ -109,12 +125,24 @@ const Hero = () => {
                 />
                 <div className="absolute bottom-0 left-0 right-0 h-80 bg-gradient-to-t from-white to-transparent z-[5]" />
                 <div className="absolute inset-0 bg-primary/20 flex items-start md:items-center xl:items-center justify-center pt-32 md:pt-5 xl:pt-0">
-                  {/* Contenido principal - mejor posicionado en XL */}
-                  <div className="container mx-auto px-4 md:px-12 xl:px-24 2xl:px-16">
-                    <div className="flex flex-col md:flex-row md:-mt-32 xl:flex-row xl:-mt-12 2xl:-mt-16 items-center max-w-6xl mx-auto relative">
-                      
-                      {/* Panel izquierdo: contenido de texto */}
-                      <div className="w-3/4 md:w-3/4 md:pr-8 xl:w-1/2 pb-6 md:pb-0 xl:pb-0 z-10 mb-16 xl:mb-120 2xl:mb-58">
+                  {/* Contenedor con padding/margin responsive */}
+                  <div className="container mx-auto 
+                  px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-32 
+                  mt-0 mb-40">
+                    {/* Row flex responsive con márgenes */}
+                    <div className="flex flex-col 
+                    sm:flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 
+                    items-center 
+                    max-w-6xl mx-auto 
+                    -mt-0 sm:-mt-16 md:-mt-32 lg:-mt-20 xl:-mt-12 2xl:-mt-16 
+                    relative">
+                      {/* Panel izquierdo contenido de texto */}
+                      <div className="w-full 
+                      sm:w-full md:w-3/5 lg:w-3/5 xl:w-2/3 2xl:w-2/3 
+                      pr-0 sm:pr-4 md:pr-8 lg:pr-10 xl:pr-8 2xl:pr-12 
+                      pb-6 sm:pb-8 md:pb-0 lg:pb-0 xl:pb-0 2xl:pb-0 
+                      z-10 
+                      mb-16 sm:mb-24 md:mb-32 lg:mb-40 xl:mb-56 2xl:mb-58">
                         <div className="bg-white/60 p-8 md:p-10 xl:p-8 rounded-2xl shadow-md">
                           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-blue-950">{slide.title}</h1>
                           <p className="text-lg md:text-xl mb-6 text-amber-600 font-bold bold">{slide.description}</p>
@@ -167,7 +195,9 @@ const Hero = () => {
         </div>
 
         {/* Indicadores del carrusel */}
-        <div className="absolute bottom-80 md:bottom-72 xl:bottom-72 2xl:bottom-80 left-0 right-0 flex justify-center gap-2 z-10">
+        <div className="absolute left-0 right-0 
+                  bottom-12 sm:bottom-16 md:bottom-20 lg:bottom-28 xl:bottom-32 2xl:bottom-40 
+                  flex justify-center gap-2 z-10">
           {slides.map((_, index) => (
             <button
               key={index}
@@ -181,10 +211,10 @@ const Hero = () => {
         </div>
         
         {/* Categorías integradas directamente en el carrusel */}
-        <div className="absolute bottom-0 left-0 right-0 z-10 w-full mb-4 md:mb-8 xl:mb-16">
+        <div className="absolute  bottom-0 left-0 right-0 z-10 w-full mb-4 md:mb-8 xl:mb-16">
           <div className="w-full">
             <div className="bg-transparent rounded-t-xl p-8 md:p-0 xl:p-4 animate-slide-in">
-              <div className="mx-auto max-w-7xl md:px-0 xl:px-28 px-4">
+              <div className="mx-auto max-w-7xl md:px-0 xl:px-20 px-4">
                 <CategoriaProductos />
               </div>
             </div>

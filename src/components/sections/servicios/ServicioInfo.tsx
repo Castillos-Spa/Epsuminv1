@@ -12,13 +12,11 @@ export default function SeccionContacto() {
           <div className="grid md:grid-cols-2 py-10">
             {/* Columna izquierda - Texto */}
             <div className="pr-4 md:pr-8 flex flex-col justify-center items-start">
-              <h2 className="mb-4 text-5xl font-bold uppercase text-blue-950">
-                Necesita
-                <br />
-                nuestros servicios?
+              <h2 className="mb-4 text-3xl md:text-5xl font-bold uppercase text-blue-950">
+                Contáctese con Nosotros
               </h2>
               <p className=" text-3xl text-amber-600">
-                Contáctanos para obtener una cotización personalizada o más información sobre nuestros servicios
+                ¡¡ Estamos aquí para responder a tus preguntas y atender tus necesidades !!
               </p>
               <div className="mt-6">
                 <Link
@@ -33,7 +31,7 @@ export default function SeccionContacto() {
                 </Link>
               </div>
             </div>
-            <div className="relative z-20 translate-y-25 xl:translate-y-50 md:translate-y-55 md:translate-x-25 xl:-translate-x-35 flex justify-center items-center animate-slide-in-right" >
+            <div className="relative z-20 translate-y-24 xl:translate-y-54 md:translate-y-61 md:translate-x-25 xl:-translate-x-35 flex justify-center items-center animate-slide-in-right" >
               <Image
                 src="/img/asistente.png"
                 alt="Persona con laptop"
@@ -44,8 +42,9 @@ export default function SeccionContacto() {
             </div>
           </div>
         </div>
-        <div className="relative z-10 bg-amber-600 px-19 py-8">
-          <div className="flex space-x-6">
+        <div className="relative z-10 bg-amber-600 px-4 md:px-19 py-10">
+          {/* Cambio de flex-row a flex-col en móvil, y flex-row en md (pantallas medianas y más grandes) */}
+          <div className="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0">
             <div className="flex items-center">
               <Mail className="mr-2 h-6 w-6 text-white" />
               <a href="mailto:contacto@epsumin.cl" className="text-white hover:underline text-lg">
@@ -55,15 +54,16 @@ export default function SeccionContacto() {
 
             <div className="flex items-center">
               <Phone className="mr-2 h-6 w-6 text-white" />
-              <a href="tel:+56961483893" className="text-white hover:underline text-lg">
-                +56 9 6148 3893
+              <a href="tel:+56961463898" className="text-white hover:underline text-lg">
+              +56 9 6146 3898
               </a>
             </div>
           </div>
         </div>
-        <div className="flex bg-blue-950 px-19 py-4 h-16">
-          
-          
+        <div className="flex items-center bg-blue-950 px-19 py-4 h-16">
+          <p className="text-white text-sm md:text-lg">
+            Lunes a Viernes 08:00 a 18:00 - Sábados 08:00 a 13:00​
+          </p>
         </div>
       </div>
     </section>

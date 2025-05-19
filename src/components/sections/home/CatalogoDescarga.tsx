@@ -10,15 +10,15 @@ export default function CatalogoProductos() {
       <div className="container relative mx-auto px-4 max-w-4xl">
         <div className="flex flex-col items-center md:flex-row md:items-center md:justify-between">
           {/* Columna de imágenes - Aumentada para imagen más grande */}
-          <div className="relative mb-8 w-full md:mb-0 md:w-3/5 xl:w-3/3 xl:-translate-x-50 md:-translate-x-20 -translate-x-15 2xl:-translate-x-140">
+          <div className="mb-8 w-full md:mb-0 md:w-3/5 xl:w-3/3 xl:-translate-x-50 md:-translate-x-20 -translate-x-15 2xl:-translate-x-130">
             {/* Contenedor de imagen más grande */}
             <div className="relative">
               <Image
-                src="/img/tablet.png"
+                src="/img/movil.png"
                 width={600}
                 height={900}
                 alt="Catálogo de productos en tablet"
-                className="h-auto w-full object-contain drop-shadow-2xl hover:scale-135"
+                className="h-auto w-full object-contain drop-shadow-2xl md:transition-all md:duration-300 md:transform md:hover:scale-135 md:hover:translate-x-29"
                 priority
               />
             </div>
@@ -29,7 +29,7 @@ export default function CatalogoProductos() {
             <h2 className="mb-4 text-3xl font-bold md:text-blue-950 md:text-4xl text-amber-600 ">Catalogo de Productos</h2>
 
             <p className="mb-8 text-xl font-medium text-amber-600 md:text-2xl">
-              Descubra nuestra completa línea de equipos y herramientas diseñadas específicamente para satisfacer los más altos estándares de la industria minera.
+              Te invitamos a conocer nuestra Vestimenta Industrial y Elementos de Protección Personal con las mejores Marcas y Calidad.
             </p>
 
             <PdfDownloadButton className="rounded-full border-2 border-white px-6 py-2 font-medium text-white bg-blue-950 transition transform duration-300 hover:scale-125 hover:bg-amber-600"/>

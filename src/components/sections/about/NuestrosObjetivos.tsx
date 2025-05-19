@@ -28,7 +28,7 @@ const NuestrosObjetivos = () => {
           </div>
           <div className="flex flex-col md:flex-row-reverse items-center gap-6">
             <Image
-              src="/gala.svg" 
+              src="/escudo.svg"
               alt="icono"
               width={100}
               height={100}
@@ -55,10 +55,10 @@ const NuestrosObjetivos = () => {
 
       <div className="bg-blue-950 text-white px-4 py-8 md:px-20 md:py-10 grid md:grid-cols-2 gap-8 mb-20">
         <div className="flex items-center justify-center">
-          <Image src="/mingcute.svg" alt="Misión" width={200} height={200} />
+          <Image src="/mingcute.svg" alt="Misión" width={200} height={200} className="brightness-0 invert"/>
         </div>
         <div>
-          <h3 className="font-bold text-base md:text-3xl mb-2">MISION</h3>
+          <h3 className="font-bold text-base md:text-3xl mb-2">MISIÓN</h3>
           <p className="text-sm md:text-base md:text-xl">
             Proveer servicios y arriendo de maquinarias de calidad para la industria minera,
             con soluciones innovadoras, seguras y sustentables, contribuyendo al desarrollo local
@@ -76,7 +76,7 @@ const NuestrosObjetivos = () => {
           </p>
         </div>
         <div className="flex items-center justify-center">
-          <Image src="/mdi_idea.svg" alt="Visión" width={200} height={200} />
+          <Image src="/mdi_idea.svg" alt="Visión" width={200} height={200} className="brightness-0 invert" />
         </div>
       </div>
     </section>

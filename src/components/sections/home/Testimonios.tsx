@@ -4,27 +4,27 @@ import Image from 'next/image';
 const testimonios = [
   {
     id: 1,
-    nombre: 'Carlos Mendoza',
+    nombre: 'Cristian Contreras',
     empresa: 'Constructora San José',
-    comentario: 'Excelente servicio y productos de alta calidad. Han sido nuestros proveedores durante 5 años y siempre cumplen con los plazos de entrega.',
+    comentario: 'Estoy satisfecho con los elementos de protección personal que compré, son resistentes y de buena calidad, me brindan la seguridad que necesito para mis trabajadores.',
     estrellas: 5,
-    avatar: '/img/avatar.png'
+    avatar: '/img/Cristian Contreras.jpeg'
   },
   {
     id: 2,
-    nombre: 'María Pérez',
+    nombre: 'Alejandro Rojas',
     empresa: 'Industrias del Valle',
-    comentario: 'Los servicios de mantenimiento que ofrecen son excepcionales. El personal técnico es muy profesional y conocedor.',
+    comentario: 'Me sorprendió gratamente la atención personalizada y la flexibilidad en pagos, una verdadera alianza con mis necesidades, excelente servicio y total recomendación.',
     estrellas: 5,
-    avatar: '/img/avatar.png'
+    avatar: '/img/Alejandro Rojas.jpeg'
   },
   {
     id: 3,
-    nombre: 'Roberto Sánchez',
+    nombre: 'Nicole Sarmiento',
     empresa: 'Minera Los Andes',
-    comentario: 'Todos los equipos de seguridad que hemos adquirido son de primera categoría. Recomiendo ampliamente sus servicios.',
-    estrellas: 4,
-    avatar: '/img/avatar.png'
+    comentario: 'Los equipos arrendados son excelentes, su rendimiento y durabilidad nos permiten trabajar con eficiencia y seguridad en nuestra faena.',
+    estrellas: 5,
+    avatar: '/img/Alejandra Castillo.jpeg'
   },
 ];
 
@@ -70,7 +70,7 @@ const Testimonios = () => {
               <p className="text-gray-700">{testimonio.comentario}</p>
               
               <div className="mt-4 flex items-center">
-                <svg className="w-5 h-5 text-blue-600 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-5 h-5 text-blue-950 mr-1" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z" />
                 </svg>
                 <span className="text-sm text-gray-500">Verificado por Google</span>
@@ -84,7 +84,7 @@ const Testimonios = () => {
             href="https://www.google.com/business" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center text-blue-600 hover:text-blue-700"
+            className="inline-flex items-center text-blue-950 hover:text-blue-700"
           >
             <span>Ver todos los comentarios en Google</span>
             <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -51,9 +51,23 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  /* Tipografía */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-titles: var(--font-garet);
+  --font-body: var(--font-beltica);
 }
+/* Add custom classes for your fonts */
+h1, h2, h3, h4, h5, h6, .title, .heading {
+  font-family: var(--font-titles);
+}
+
+p, span, div, li, .body-text {
+  font-family: var(--font-body);
+}
+/* {
+  font-family: var(--font-garet), sans-serif;
+}*/
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -68,7 +82,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), sans-serif; /* Added sans-serif as a fallback */
+  font-family: var(--font-body), serif; /* Added sans-serif as a fallback */
 }
 
 /* Estilos para aplicar animaciones a componentes */
